@@ -30,7 +30,7 @@ const ExperienceSection = () => {
     <section className="bg-cream-white py-20">
       <div className="container mx-auto px-4">
         <SectionHeading
-          title="心ときめく、自分だけのキャンドル作り体験💖"
+          title="キャンドル体験プラン"
           subtitle="宮古島の美しい思い出を、世界にひとつのキャンドルに込めてみませんか？初めての方でも安心して楽しめるよう、スタッフがしっかりサポートします✨"
         />
 

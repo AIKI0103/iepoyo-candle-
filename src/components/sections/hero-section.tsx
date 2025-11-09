@@ -12,7 +12,7 @@ const LazyGradientButton = lazy(() =>
 
 const HeroSection = () => {
   return (
-    <section className="bg-black">
+    <section className="bg-gradient-to-r from-[#3e5a82] to-[#8d65a5]">
        <div className="absolute inset-0 overflow-hidden">
         <div className="bg-cream-white/20 absolute -top-24 -right-24 h-96 w-96 rounded-full blur-3xl" />
         <div className="bg-pastel-coral/20 absolute -bottom-24 -left-24 h-80 w-80 rounded-full blur-3xl" />
@@ -21,28 +21,21 @@ const HeroSection = () => {
       <div className="relative z-10 container mx-auto px-4">
         <div className="mx-auto max-w-1xl text-center">
           {/* メインタイトル */}
-          <h1 className="mb-6 text-1xl leading-tight font-bold text-white md:text-2xl">
-            <span className="block">
-              宮古島で、&ldquo;きゅんん&rdquo;とする想い出づくり
-            </span>
-            <span className="text-gold-highlight block">
-              雨の日・台風でも安心の手作り体験で、
-            </span>
-            <span className="block">
-              カップル・ファミリー・おひとりでも楽しめる特別な宮古島の思い出を&ldquo;カタチ&rdquo;に🕯️🌺💎
-            </span>
-          </h1>
+        <h1 className="text-white">iepoyo candle🕯️</h1>
 
           {/* サブタイトル */}
-          <p className="mx-auto mb-8 max-w-2xl text-lg leading-relaxed text-white/90 md:text-xl">
-            宮古島観光の新定番！雨の日・台風の日でも安心の室内体験で、
+          <h2 className="mx-auto mb-8 max-w-2xl text-lg leading-relaxed text-white/90 md:text-xl">
+            Concept</h2>
+            <p className="mt-4 text-white">
+            煌めく空、広がる海。<br className="hidden sm:block" />
+            宮古島の美しい思い出を自分だけのキャンドルに込めて
             <br className="hidden sm:block" />
-            キラキラの海をぎゅっと閉じ込めた宝物みたいなキャンドル。
             <br className="hidden sm:block" />
-            初めてでも、不器用さんでも大丈夫！記念日デート・女子旅・ファミリー旅行にぴったりの90分体験😉
+            「iepoyp candle」は、お子様や初心者でも安心して楽しめるワークショップ。<br className="hidden sm:block" />
+            旅行や観光の思い出に、キャンドルづくりを体験してみませんか。
           </p>
 
-          {/* CTAボタン */}
+          {/* CTAボタン
           <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
             <Link href="/experience">
               <Suspense
@@ -72,26 +65,26 @@ const HeroSection = () => {
                   🎨 何が作れるか見てみる
                 </LazyGradientButton>
               </Suspense>
-            </Link>
-          </div>
+            </Link>/
+          </div> */}
 
           {/* 特徴ポイント */}
           <div className="mt-12 flex flex-wrap justify-center gap-6 text-white/80">
             <div className="flex items-center gap-2">
-              <span className="text-gold-highlight">☔</span>
+              <span className="text-gold-highlight">#</span>
               <span className="text-sm">雨の日・台風OK!</span>
             </div>
             <div className="flex items-center gap-2">
-              <span className="text-gold-highlight">📸</span>
-              <span className="text-sm">インスタ映え確実</span>
+              <span className="text-gold-highlight">#</span>
+              <span className="text-sm">インスタ映え</span>
             </div>
             <div className="flex items-center gap-2">
-              <span className="text-gold-highlight">👥</span>
+              <span className="text-gold-highlight">#</span>
               <span className="text-sm">1〜5名まで・グループ歓迎</span>
             </div>
             <div className="flex items-center gap-2">
-              <span className="text-gold-highlight">🎨</span>
-              <span className="text-sm">手作り体験・手ぶらOK</span>
+              <span className="text-gold-highlight">#</span>
+              <span className="text-sm">手作り体験</span>
             </div>
           </div>
         </div>
