@@ -23,7 +23,7 @@ const HeroSection = () => {
           {/* メインタイトル */}
           <h1 className="mb-6 text-1xl leading-tight font-bold text-white md:text-2xl">
             <span className="block">
-              宮古島で、&ldquo;きゅんん&rdquo;とする想い出づくり💖
+              宮古島で、&ldquo;きゅんん&rdquo;とする想い出づくり
             </span>
             <span className="text-gold-highlight block">
               雨の日・台風でも安心の手作り体験で、
