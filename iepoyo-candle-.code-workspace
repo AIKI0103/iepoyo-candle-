@@ -1,0 +1,20 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../iepoyo-candle/line-rich-menu"
+		},
+		{
+			"path": "../iepoyo-candle/node_modules"
+		},
+		{
+			"path": "../iepoyo-candle/public"
+		},
+		{
+			"path": "../iepoyo-candle/src"
+		}
+	],
+	"settings": {}
+}

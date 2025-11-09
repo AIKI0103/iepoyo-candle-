@@ -1,0 +1,63 @@
+{
+  "name": "my-next-app",
+  "version": "0.1.2",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "dev-deploy": "opennextjs-cloudflare build && wrangler deploy --name iepoyo-candle-dev",
+    "prod-deploy": "opennextjs-cloudflare build && wrangler deploy --name iepoyo-candle",
+    "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
+    "quality-check": "pnpm lint && npx prettier --check . && npx tsc --noEmit",
+    "quality-check:security": "pnpm audit --audit-level moderate",
+    "quality-fix": "pnpm lint --fix && npx prettier --write . && npx tsc --noEmit"
+  },
+  "dependencies": {
+    "@next/bundle-analyzer": "^15.4.5",
+    "@next/third-parties": "14.0.5-canary.59",
+    "@opennextjs/cloudflare": "^1.5.1",
+    "@radix-ui/react-avatar": "^1.1.10",
+    "@radix-ui/react-separator": "^1.1.7",
+    "@radix-ui/react-slot": "^1.2.3",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "framer-motion": "^12.23.12",
+    "lucide-react": "^0.525.0",
+    "next": "15.3.5",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "tailwind-merge": "^3.3.1",
+    "zod": "^3.23.0"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@ianvs/prettier-plugin-sort-imports": "^4.5.1",
+    "@playwright/test": "^1.54.1",
+    "@tailwindcss/postcss": "^4",
+    "@testing-library/jest-dom": "^6.6.4",
+    "@testing-library/react": "^16.3.0",
+    "@testing-library/user-event": "^14.6.1",
+    "@types/jest": "^30.0.0",
+    "@types/node": "^20.19.8",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "15.3.5",
+    "husky": "^9.1.7",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^30.0.5",
+    "jest-environment-jsdom": "^30.0.5",
+    "prettier": "^3.6.2",
+    "prettier-plugin-tailwindcss": "^0.6.14",
+    "tailwindcss": "^4",
+    "typescript": "^5",
+    "wrangler": "^4.25.0"
+  },
+  "pnpm": {
+    "overrides": {
+      "@eslint/plugin-kit@<0.3.4": ">=0.3.4"
+    }
+  }
+}

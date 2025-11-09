@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iepoyo candle - LINEリッチメニュー（6分割リゾートスタイル）</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', 'Arial', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Yu Gothic', sans-serif;
+            background: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .rich-menu-container {
+            width: 2500px;
+            height: 1686px;
+            background: #EEE7DD;
+            display: grid;
+            grid-template-columns: 1666px 834px;
+            grid-template-rows: 843px 843px;
+            grid-gap: 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* グリッドエリア定義 */
+        .area-ab { grid-column: 1; grid-row: 1; }
+        .area-c { grid-column: 2; grid-row: 1; }
+        .area-de { grid-column: 1; grid-row: 2; }
+        .area-f { grid-column: 2; grid-row: 2; }
+
+        /* A・Bエリア：アイキャッチ画像 */
+        .image-section {
+            position: relative;
+            background: #F5F0E8;
+        }
+
+        .image-section::before {
+            content: '';
+            position: absolute;
+            top: 60px;
+            left: 60px;
+            right: 60px;
+            bottom: 60px;
+            border: 6px solid #000000;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .image-section::after {
+            content: '';
+            position: absolute;
+            top: 80px;
+            left: 80px;
+            right: 80px;
+            bottom: 80px;
+            border: 2px solid #000000;
+            pointer-events: none;
+            z-index: 2;
+        }
+
+        .image-container {
+            position: absolute;
+            top: 80px;
+            left: 80px;
+            right: 80px;
+            bottom: 80px;
+            background-image: url('https://imagedelivery.net/NvrRuadp8jbz6w1RVQvxOg/e46d2e5a-f1d7-4e40-af9e-71a2adb82b00/public');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            z-index: 3;
+        }
+
+        .image-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(to bottom, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.4) 100%);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            padding: 40px;
+            z-index: 4;
+        }
+
+        .area-ab .image-overlay {
+            align-items: center;
+            justify-content: center;
+        }
+
+        .resort-title {
+            font-size: 96px;
+            font-weight: 700;
+            letter-spacing: 8px;
+            margin-bottom: 20px;
+            text-shadow: 0 4px 8px rgba(0,0,0,0.5);
+            line-height: 1.2;
+        }
+
+        .resort-subtitle {
+            font-size: 48px;
+            font-weight: 700;
+            letter-spacing: 4px;
+            opacity: 0.9;
+            text-shadow: 0 2px 6px rgba(0,0,0,0.5);
+        }
+
+        /* D・Eエリア：予約セクション */
+        .reservation-section {
+            background: #F5F0E8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .reservation-section::before {
+            content: '';
+            position: absolute;
+            top: 60px;
+            left: 60px;
+            right: 60px;
+            bottom: 60px;
+            border: 6px solid #000000;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .reservation-section::after {
+            content: '';
+            position: absolute;
+            top: 80px;
+            left: 80px;
+            right: 80px;
+            bottom: 80px;
+            border: 2px solid #000000;
+            pointer-events: none;
+            z-index: 2;
+        }
+
+        .reservation-section:hover {
+            background: #F5F0E8;
+            transform: scale(1.02);
+        }
+
+        .reservation-section:hover::before {
+            border-color: #333333;
+        }
+
+        .reservation-content {
+            text-align: center;
+            position: relative;
+            z-index: 3;
+        }
+
+        .reservation-icon {
+            width: 200px;
+            height: 200px;
+            margin: 0 auto 30px;
+            stroke: #666666;
+            stroke-width: 1.5;
+            fill: none;
+        }
+
+        .reservation-text-en {
+            font-size: 108px;
+            font-weight: 400;
+            letter-spacing: 4px;
+            color: #333333;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+
+        .reservation-text-ja {
+            font-size: 72px;
+            color: #666666;
+            letter-spacing: 2px;
+        }
+
+        /* C・Fエリア：ボタンセクション */
+        .button-section {
+            background: #F5F0E8;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .button-section::before {
+            content: '';
+            position: absolute;
+            top: 60px;
+            left: 60px;
+            right: 60px;
+            bottom: 60px;
+            border: 6px solid #000000;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .button-section::after {
+            content: '';
+            position: absolute;
+            top: 80px;
+            left: 80px;
+            right: 80px;
+            bottom: 80px;
+            border: 2px solid #000000;
+            pointer-events: none;
+            z-index: 2;
+        }
+
+        .button-section:hover {
+            background: #F5F0E8;
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .button-section:hover::before {
+            border-color: #333333;
+        }
+
+        .button-icon {
+            width: 160px;
+            height: 160px;
+            margin-bottom: 30px;
+            stroke: #666666;
+            stroke-width: 1.5;
+            fill: none;
+            position: relative;
+            z-index: 3;
+        }
+
+        .button-text-en {
+            font-size: 84px;
+            font-weight: 400;
+            letter-spacing: 3px;
+            color: #333333;
+            margin-bottom: 12px;
+            text-transform: uppercase;
+            position: relative;
+            z-index: 3;
+        }
+
+        .button-text-ja {
+            font-size: 60px;
+            color: #666666;
+            letter-spacing: 1px;
+            position: relative;
+            z-index: 3;
+        }
+
+        /* 境界線削除 - 全てのボーダーを表示しない */
+
+        /* レスポンシブ対応 */
+        @media (max-width: 2600px) {
+            .rich-menu-container {
+                transform: scale(0.8);
+                transform-origin: center;
+            }
+        }
+
+        @media (max-width: 2100px) {
+            .rich-menu-container {
+                transform: scale(0.6);
+            }
+        }
+
+        @media (max-width: 1600px) {
+            .rich-menu-container {
+                transform: scale(0.4);
+            }
+        }
+
+        /* アニメーション */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .rich-menu-container > div {
+            animation: fadeIn 0.6s ease-out forwards;
+        }
+
+        .area-ab { animation-delay: 0.1s; }
+        .area-c { animation-delay: 0.2s; }
+        .area-de { animation-delay: 0.3s; }
+        .area-f { animation-delay: 0.4s; }
+    </style>
+</head>
+<body>
+    <div class="rich-menu-container">
+        <!-- A+B: 上部左側 - アイキャッチ画像（1666×843px） -->
+        <div class="area-ab image-section">
+            <div class="image-container">
+                <div class="image-overlay">
+                    <h1 class="resort-title">iepoyo candle</h1>
+                    <p class="resort-subtitle">宮古島キャンドル工房</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- C: 右上 - お問い合わせ（834×843px） -->
+        <div class="area-c button-section" onclick="sendContactMessage()">
+            <svg class="button-icon" viewBox="0 0 24 24">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+            <div class="button-text-en">CONTACT</div>
+            <div class="button-text-ja">お問い合わせ</div>
+        </div>
+
+        <!-- D+E: 下部左側 - 予約（1666×843px） -->
+        <div class="area-de reservation-section" onclick="window.open('https://candle.iepoyo.com/reservation', '_blank')">
+            <div class="reservation-content">
+                <svg class="reservation-icon" viewBox="0 0 24 24">
+                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                </svg>
+                <div class="reservation-text-en">RESERVATION</div>
+                <div class="reservation-text-ja">ご予約はこちら</div>
+            </div>
+        </div>
+
+        <!-- F: 右下 - Instagram（834×843px） -->
+        <div class="area-f button-section" onclick="window.open('https://www.instagram.com/iepoyo.miyako/', '_blank')">
+            <svg class="button-icon" viewBox="0 0 24 24">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            </svg>
+            <div class="button-text-en">INSTAGRAM</div>
+            <div class="button-text-ja">作品を見る</div>
+        </div>
+    </div>
+
+    <script>
+        // 問い合わせボタンの動作
+        function sendContactMessage() {
+            if (window.navigator.userAgent.includes('Line')) {
+                window.postMessage(JSON.stringify({
+                    type: 'send_text',
+                    text: 'お問い合わせ'
+                }), '*');
+            } else {
+                window.open('https://lin.ee/PhCo4lv', '_blank');
+            }
+        }
+
+        // 初期化処理
+        document.addEventListener('DOMContentLoaded', function() {
+            const clickableElements = document.querySelectorAll('.button-section, .reservation-section');
+            
+            clickableElements.forEach(element => {
+                element.setAttribute('tabindex', '0');
+                element.setAttribute('role', 'button');
+                
+                element.addEventListener('keydown', function(e) {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        this.click();
+                    }
+                });
+            });
+
+            console.log('iepoyo candle 6-Grid Resort Style Rich Menu loaded');
+            console.log('Grid Layout: 2500x1686px, 6 sections (3x2)');
+            console.log('Each section: 833x843px');
+        });
+    </script>
+</body>
+</html>
