@@ -198,7 +198,7 @@ const Header = () => {
           style={{
             maxHeight: isMenuOpen ? '100vh' : '0',
             overflow: isMenuOpen ? 'auto' : 'hidden',
-            transition: 'max-height 0.3s ease-in-out',
+            transition: 'max-height 1.3s ease-in-out',
             backgroundColor: 'rgba(255, 247, 250, 0.98)',
             borderTop: '1px solid rgba(244, 194, 193, 0.3)',
             position: 'absolute',

@@ -2,6 +2,7 @@
 
 import { lazy, Suspense } from 'react'
 import Link from 'next/link'
+import GSAPFadeIn from '../GSAPFadeIn'
 
 // 遅延ロードコンポーネント
 const LazyGradientButton = lazy(() =>
@@ -12,8 +13,11 @@ const LazyGradientButton = lazy(() =>
 
 const HeroSection = () => {
   return (
-    <section className="bg-black">
-       <div className="absolute inset-0 overflow-hidden">
+    <section className="bg-black relative">
+      {/* GSAPFadeIn をページ内で一度呼び出す */}
+      <GSAPFadeIn />
+
+      <div className="absolute inset-0 overflow-hidden">
         <div className="bg-cream-white/20 absolute -top-24 -right-24 h-96 w-96 rounded-full blur-3xl" />
         <div className="bg-pastel-coral/20 absolute -bottom-24 -left-24 h-80 w-80 rounded-full blur-3xl" />
       </div>
@@ -21,7 +25,7 @@ const HeroSection = () => {
       <div className="relative z-10 container mx-auto px-4">
         <div className="mx-auto max-w-1xl text-center">
           {/* メインタイトル */}
-          <h1 className="mb-6 text-1xl leading-tight font-bold text-white md:text-2xl">
+          <h1 className="fade-in opacity-0 mb-6 text-1xl leading-tight font-bold text-white md:text-2xl">
             <span className="block">
               宮古島で、&ldquo;きゅんん&rdquo;とする想い出づくり💖
             </span>
@@ -34,7 +38,7 @@ const HeroSection = () => {
           </h1>
 
           {/* サブタイトル */}
-          <p className="mx-auto mb-8 max-w-2xl text-lg leading-relaxed text-white/90 md:text-xl">
+          <p className="fade-in opacity-0 mx-auto mb-8 max-w-2xl text-lg leading-relaxed text-white/90 md:text-xl">
             宮古島観光の新定番！雨の日・台風の日でも安心の室内体験で、
             <br className="hidden sm:block" />
             キラキラの海をぎゅっと閉じ込めた宝物みたいなキャンドルを手作り。
@@ -43,7 +47,7 @@ const HeroSection = () => {
           </p>
 
           {/* CTAボタン */}
-          <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
+          <div className="fade-in opacity-0 mt-6 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <Link href="/experience">
               <Suspense
                 fallback={
@@ -77,19 +81,19 @@ const HeroSection = () => {
 
           {/* 特徴ポイント */}
           <div className="mt-12 flex flex-wrap justify-center gap-6 text-white/80">
-            <div className="flex items-center gap-2">
+            <div className="fade-in opacity-0 flex items-center gap-2">
               <span className="text-gold-highlight">☔</span>
               <span className="text-sm">雨の日・台風OK!</span>
             </div>
-            <div className="flex items-center gap-2">
+            <div className="fade-in opacity-0 flex items-center gap-2">
               <span className="text-gold-highlight">📸</span>
               <span className="text-sm">インスタ映え確実</span>
             </div>
-            <div className="flex items-center gap-2">
+            <div className="fade-in opacity-0 flex items-center gap-2">
               <span className="text-gold-highlight">👥</span>
               <span className="text-sm">1〜5名まで・グループ歓迎</span>
             </div>
-            <div className="flex items-center gap-2">
+            <div className="fade-in opacity-0 flex items-center gap-2">
               <span className="text-gold-highlight">🎨</span>
               <span className="text-sm">手作り体験・手ぶらOK</span>
             </div>

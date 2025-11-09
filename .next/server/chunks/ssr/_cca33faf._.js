@@ -1,0 +1,866 @@
+module.exports = {
+
+"[project]/.next-internal/server/app/gallery/page/actions.js [app-rsc] (server actions loader, ecmascript)": (function(__turbopack_context__) {
+
+var { g: global, __dirname, m: module, e: exports } = __turbopack_context__;
+{
+}}),
+"[project]/src/app/layout.tsx [app-rsc] (ecmascript, Next.js server component)": ((__turbopack_context__) => {
+
+var { g: global, __dirname } = __turbopack_context__;
+{
+__turbopack_context__.n(__turbopack_context__.i("[project]/src/app/layout.tsx [app-rsc] (ecmascript)"));
+}}),
+"[project]/src/app/error.tsx [app-rsc] (ecmascript, Next.js server component)": ((__turbopack_context__) => {
+
+var { g: global, __dirname } = __turbopack_context__;
+{
+__turbopack_context__.n(__turbopack_context__.i("[project]/src/app/error.tsx [app-rsc] (ecmascript)"));
+}}),
+"[project]/src/app/loading.tsx [app-rsc] (ecmascript, Next.js server component)": ((__turbopack_context__) => {
+
+var { g: global, __dirname } = __turbopack_context__;
+{
+__turbopack_context__.n(__turbopack_context__.i("[project]/src/app/loading.tsx [app-rsc] (ecmascript)"));
+}}),
+"[project]/src/app/not-found.tsx [app-rsc] (ecmascript, Next.js server component)": ((__turbopack_context__) => {
+
+var { g: global, __dirname } = __turbopack_context__;
+{
+__turbopack_context__.n(__turbopack_context__.i("[project]/src/app/not-found.tsx [app-rsc] (ecmascript)"));
+}}),
+"[project]/src/app/global-error.tsx [app-rsc] (ecmascript, Next.js server component)": ((__turbopack_context__) => {
+
+var { g: global, __dirname } = __turbopack_context__;
+{
+__turbopack_context__.n(__turbopack_context__.i("[project]/src/app/global-error.tsx [app-rsc] (ecmascript)"));
+}}),
+"[project]/src/components/gallery/gallery-client.tsx (client reference/proxy) <module evaluation>": ((__turbopack_context__) => {
+"use strict";
+
+var { g: global, __dirname } = __turbopack_context__;
+{
+__turbopack_context__.s({
+    "GalleryClient": (()=>GalleryClient)
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$15$2e$3$2e$5_$40$babel$2b$core$40$7$2e$28$2e$0_$40$playwright$2b$test$40$1$2e$54$2e$1_react$2d$dom$40$19$2e$1$2e$0_react$40$19$2e$1$2e$0_$5f$react$40$19$2e$1$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$server$2d$dom$2d$turbopack$2d$server$2d$edge$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/next@15.3.5_@babel+core@7.28.0_@playwright+test@1.54.1_react-dom@19.1.0_react@19.1.0__react@19.1.0/node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react-server-dom-turbopack-server-edge.js [app-rsc] (ecmascript)");
+;
+const GalleryClient = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$15$2e$3$2e$5_$40$babel$2b$core$40$7$2e$28$2e$0_$40$playwright$2b$test$40$1$2e$54$2e$1_react$2d$dom$40$19$2e$1$2e$0_react$40$19$2e$1$2e$0_$5f$react$40$19$2e$1$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$server$2d$dom$2d$turbopack$2d$server$2d$edge$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["registerClientReference"])(function() {
+    throw new Error("Attempted to call GalleryClient() from the server but GalleryClient is on the client. It's not possible to invoke a client function from the server, it can only be rendered as a Component or passed to props of a Client Component.");
+}, "[project]/src/components/gallery/gallery-client.tsx <module evaluation>", "GalleryClient");
+}}),
+"[project]/src/components/gallery/gallery-client.tsx (client reference/proxy)": ((__turbopack_context__) => {
+"use strict";
+
+var { g: global, __dirname } = __turbopack_context__;
+{
+__turbopack_context__.s({
+    "GalleryClient": (()=>GalleryClient)
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$15$2e$3$2e$5_$40$babel$2b$core$40$7$2e$28$2e$0_$40$playwright$2b$test$40$1$2e$54$2e$1_react$2d$dom$40$19$2e$1$2e$0_react$40$19$2e$1$2e$0_$5f$react$40$19$2e$1$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$server$2d$dom$2d$turbopack$2d$server$2d$edge$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/next@15.3.5_@babel+core@7.28.0_@playwright+test@1.54.1_react-dom@19.1.0_react@19.1.0__react@19.1.0/node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react-server-dom-turbopack-server-edge.js [app-rsc] (ecmascript)");
+;
+const GalleryClient = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$15$2e$3$2e$5_$40$babel$2b$core$40$7$2e$28$2e$0_$40$playwright$2b$test$40$1$2e$54$2e$1_react$2d$dom$40$19$2e$1$2e$0_react$40$19$2e$1$2e$0_$5f$react$40$19$2e$1$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$server$2d$dom$2d$turbopack$2d$server$2d$edge$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["registerClientReference"])(function() {
+    throw new Error("Attempted to call GalleryClient() from the server but GalleryClient is on the client. It's not possible to invoke a client function from the server, it can only be rendered as a Component or passed to props of a Client Component.");
+}, "[project]/src/components/gallery/gallery-client.tsx", "GalleryClient");
+}}),
+"[project]/src/components/gallery/gallery-client.tsx [app-rsc] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { g: global, __dirname } = __turbopack_context__;
+{
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$gallery$2f$gallery$2d$client$2e$tsx__$28$client__reference$2f$proxy$29$__$3c$module__evaluation$3e$__ = __turbopack_context__.i("[project]/src/components/gallery/gallery-client.tsx (client reference/proxy) <module evaluation>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$gallery$2f$gallery$2d$client$2e$tsx__$28$client__reference$2f$proxy$29$__ = __turbopack_context__.i("[project]/src/components/gallery/gallery-client.tsx (client reference/proxy)");
+;
+__turbopack_context__.n(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$gallery$2f$gallery$2d$client$2e$tsx__$28$client__reference$2f$proxy$29$__);
+}}),
+"[project]/src/components/social/floating-social-bar.tsx (client reference/proxy) <module evaluation>": ((__turbopack_context__) => {
+"use strict";
+
+var { g: global, __dirname } = __turbopack_context__;
+{
+__turbopack_context__.s({
+    "FloatingSocialBar": (()=>FloatingSocialBar)
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$15$2e$3$2e$5_$40$babel$2b$core$40$7$2e$28$2e$0_$40$playwright$2b$test$40$1$2e$54$2e$1_react$2d$dom$40$19$2e$1$2e$0_react$40$19$2e$1$2e$0_$5f$react$40$19$2e$1$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$server$2d$dom$2d$turbopack$2d$server$2d$edge$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/next@15.3.5_@babel+core@7.28.0_@playwright+test@1.54.1_react-dom@19.1.0_react@19.1.0__react@19.1.0/node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react-server-dom-turbopack-server-edge.js [app-rsc] (ecmascript)");
+;
+const FloatingSocialBar = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$15$2e$3$2e$5_$40$babel$2b$core$40$7$2e$28$2e$0_$40$playwright$2b$test$40$1$2e$54$2e$1_react$2d$dom$40$19$2e$1$2e$0_react$40$19$2e$1$2e$0_$5f$react$40$19$2e$1$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$server$2d$dom$2d$turbopack$2d$server$2d$edge$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["registerClientReference"])(function() {
+    throw new Error("Attempted to call FloatingSocialBar() from the server but FloatingSocialBar is on the client. It's not possible to invoke a client function from the server, it can only be rendered as a Component or passed to props of a Client Component.");
+}, "[project]/src/components/social/floating-social-bar.tsx <module evaluation>", "FloatingSocialBar");
+}}),
+"[project]/src/components/social/floating-social-bar.tsx (client reference/proxy)": ((__turbopack_context__) => {
+"use strict";
+
+var { g: global, __dirname } = __turbopack_context__;
+{
+__turbopack_context__.s({
+    "FloatingSocialBar": (()=>FloatingSocialBar)
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$15$2e$3$2e$5_$40$babel$2b$core$40$7$2e$28$2e$0_$40$playwright$2b$test$40$1$2e$54$2e$1_react$2d$dom$40$19$2e$1$2e$0_react$40$19$2e$1$2e$0_$5f$react$40$19$2e$1$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$server$2d$dom$2d$turbopack$2d$server$2d$edge$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/next@15.3.5_@babel+core@7.28.0_@playwright+test@1.54.1_react-dom@19.1.0_react@19.1.0__react@19.1.0/node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react-server-dom-turbopack-server-edge.js [app-rsc] (ecmascript)");
+;
+const FloatingSocialBar = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$15$2e$3$2e$5_$40$babel$2b$core$40$7$2e$28$2e$0_$40$playwright$2b$test$40$1$2e$54$2e$1_react$2d$dom$40$19$2e$1$2e$0_react$40$19$2e$1$2e$0_$5f$react$40$19$2e$1$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$server$2d$dom$2d$turbopack$2d$server$2d$edge$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["registerClientReference"])(function() {
+    throw new Error("Attempted to call FloatingSocialBar() from the server but FloatingSocialBar is on the client. It's not possible to invoke a client function from the server, it can only be rendered as a Component or passed to props of a Client Component.");
+}, "[project]/src/components/social/floating-social-bar.tsx", "FloatingSocialBar");
+}}),
+"[project]/src/components/social/floating-social-bar.tsx [app-rsc] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { g: global, __dirname } = __turbopack_context__;
+{
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$social$2f$floating$2d$social$2d$bar$2e$tsx__$28$client__reference$2f$proxy$29$__$3c$module__evaluation$3e$__ = __turbopack_context__.i("[project]/src/components/social/floating-social-bar.tsx (client reference/proxy) <module evaluation>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$social$2f$floating$2d$social$2d$bar$2e$tsx__$28$client__reference$2f$proxy$29$__ = __turbopack_context__.i("[project]/src/components/social/floating-social-bar.tsx (client reference/proxy)");
+;
+__turbopack_context__.n(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$social$2f$floating$2d$social$2d$bar$2e$tsx__$28$client__reference$2f$proxy$29$__);
+}}),
+"[project]/src/components/layout/footer.tsx (client reference/proxy) <module evaluation>": ((__turbopack_context__) => {
+"use strict";
+
+var { g: global, __dirname } = __turbopack_context__;
+{
+__turbopack_context__.s({
+    "Footer": (()=>Footer)
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$15$2e$3$2e$5_$40$babel$2b$core$40$7$2e$28$2e$0_$40$playwright$2b$test$40$1$2e$54$2e$1_react$2d$dom$40$19$2e$1$2e$0_react$40$19$2e$1$2e$0_$5f$react$40$19$2e$1$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$server$2d$dom$2d$turbopack$2d$server$2d$edge$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/next@15.3.5_@babel+core@7.28.0_@playwright+test@1.54.1_react-dom@19.1.0_react@19.1.0__react@19.1.0/node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react-server-dom-turbopack-server-edge.js [app-rsc] (ecmascript)");
+;
+const Footer = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$15$2e$3$2e$5_$40$babel$2b$core$40$7$2e$28$2e$0_$40$playwright$2b$test$40$1$2e$54$2e$1_react$2d$dom$40$19$2e$1$2e$0_react$40$19$2e$1$2e$0_$5f$react$40$19$2e$1$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$server$2d$dom$2d$turbopack$2d$server$2d$edge$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["registerClientReference"])(function() {
+    throw new Error("Attempted to call Footer() from the server but Footer is on the client. It's not possible to invoke a client function from the server, it can only be rendered as a Component or passed to props of a Client Component.");
+}, "[project]/src/components/layout/footer.tsx <module evaluation>", "Footer");
+}}),
+"[project]/src/components/layout/footer.tsx (client reference/proxy)": ((__turbopack_context__) => {
+"use strict";
+
+var { g: global, __dirname } = __turbopack_context__;
+{
+__turbopack_context__.s({
+    "Footer": (()=>Footer)
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$15$2e$3$2e$5_$40$babel$2b$core$40$7$2e$28$2e$0_$40$playwright$2b$test$40$1$2e$54$2e$1_react$2d$dom$40$19$2e$1$2e$0_react$40$19$2e$1$2e$0_$5f$react$40$19$2e$1$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$server$2d$dom$2d$turbopack$2d$server$2d$edge$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/next@15.3.5_@babel+core@7.28.0_@playwright+test@1.54.1_react-dom@19.1.0_react@19.1.0__react@19.1.0/node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react-server-dom-turbopack-server-edge.js [app-rsc] (ecmascript)");
+;
+const Footer = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$15$2e$3$2e$5_$40$babel$2b$core$40$7$2e$28$2e$0_$40$playwright$2b$test$40$1$2e$54$2e$1_react$2d$dom$40$19$2e$1$2e$0_react$40$19$2e$1$2e$0_$5f$react$40$19$2e$1$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$server$2d$dom$2d$turbopack$2d$server$2d$edge$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["registerClientReference"])(function() {
+    throw new Error("Attempted to call Footer() from the server but Footer is on the client. It's not possible to invoke a client function from the server, it can only be rendered as a Component or passed to props of a Client Component.");
+}, "[project]/src/components/layout/footer.tsx", "Footer");
+}}),
+"[project]/src/components/layout/footer.tsx [app-rsc] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { g: global, __dirname } = __turbopack_context__;
+{
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$layout$2f$footer$2e$tsx__$28$client__reference$2f$proxy$29$__$3c$module__evaluation$3e$__ = __turbopack_context__.i("[project]/src/components/layout/footer.tsx (client reference/proxy) <module evaluation>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$layout$2f$footer$2e$tsx__$28$client__reference$2f$proxy$29$__ = __turbopack_context__.i("[project]/src/components/layout/footer.tsx (client reference/proxy)");
+;
+__turbopack_context__.n(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$layout$2f$footer$2e$tsx__$28$client__reference$2f$proxy$29$__);
+}}),
+"[project]/src/components/layout/header.tsx (client reference/proxy) <module evaluation>": ((__turbopack_context__) => {
+"use strict";
+
+var { g: global, __dirname } = __turbopack_context__;
+{
+__turbopack_context__.s({
+    "Header": (()=>Header)
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$15$2e$3$2e$5_$40$babel$2b$core$40$7$2e$28$2e$0_$40$playwright$2b$test$40$1$2e$54$2e$1_react$2d$dom$40$19$2e$1$2e$0_react$40$19$2e$1$2e$0_$5f$react$40$19$2e$1$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$server$2d$dom$2d$turbopack$2d$server$2d$edge$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/next@15.3.5_@babel+core@7.28.0_@playwright+test@1.54.1_react-dom@19.1.0_react@19.1.0__react@19.1.0/node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react-server-dom-turbopack-server-edge.js [app-rsc] (ecmascript)");
+;
+const Header = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$15$2e$3$2e$5_$40$babel$2b$core$40$7$2e$28$2e$0_$40$playwright$2b$test$40$1$2e$54$2e$1_react$2d$dom$40$19$2e$1$2e$0_react$40$19$2e$1$2e$0_$5f$react$40$19$2e$1$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$server$2d$dom$2d$turbopack$2d$server$2d$edge$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["registerClientReference"])(function() {
+    throw new Error("Attempted to call Header() from the server but Header is on the client. It's not possible to invoke a client function from the server, it can only be rendered as a Component or passed to props of a Client Component.");
+}, "[project]/src/components/layout/header.tsx <module evaluation>", "Header");
+}}),
+"[project]/src/components/layout/header.tsx (client reference/proxy)": ((__turbopack_context__) => {
+"use strict";
+
+var { g: global, __dirname } = __turbopack_context__;
+{
+__turbopack_context__.s({
+    "Header": (()=>Header)
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$15$2e$3$2e$5_$40$babel$2b$core$40$7$2e$28$2e$0_$40$playwright$2b$test$40$1$2e$54$2e$1_react$2d$dom$40$19$2e$1$2e$0_react$40$19$2e$1$2e$0_$5f$react$40$19$2e$1$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$server$2d$dom$2d$turbopack$2d$server$2d$edge$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/next@15.3.5_@babel+core@7.28.0_@playwright+test@1.54.1_react-dom@19.1.0_react@19.1.0__react@19.1.0/node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react-server-dom-turbopack-server-edge.js [app-rsc] (ecmascript)");
+;
+const Header = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$15$2e$3$2e$5_$40$babel$2b$core$40$7$2e$28$2e$0_$40$playwright$2b$test$40$1$2e$54$2e$1_react$2d$dom$40$19$2e$1$2e$0_react$40$19$2e$1$2e$0_$5f$react$40$19$2e$1$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$server$2d$dom$2d$turbopack$2d$server$2d$edge$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["registerClientReference"])(function() {
+    throw new Error("Attempted to call Header() from the server but Header is on the client. It's not possible to invoke a client function from the server, it can only be rendered as a Component or passed to props of a Client Component.");
+}, "[project]/src/components/layout/header.tsx", "Header");
+}}),
+"[project]/src/components/layout/header.tsx [app-rsc] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { g: global, __dirname } = __turbopack_context__;
+{
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$layout$2f$header$2e$tsx__$28$client__reference$2f$proxy$29$__$3c$module__evaluation$3e$__ = __turbopack_context__.i("[project]/src/components/layout/header.tsx (client reference/proxy) <module evaluation>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$layout$2f$header$2e$tsx__$28$client__reference$2f$proxy$29$__ = __turbopack_context__.i("[project]/src/components/layout/header.tsx (client reference/proxy)");
+;
+__turbopack_context__.n(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$layout$2f$header$2e$tsx__$28$client__reference$2f$proxy$29$__);
+}}),
+"[project]/src/components/layout/main-layout.tsx [app-rsc] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { g: global, __dirname } = __turbopack_context__;
+{
+__turbopack_context__.s({
+    "MainLayout": (()=>MainLayout)
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$15$2e$3$2e$5_$40$babel$2b$core$40$7$2e$28$2e$0_$40$playwright$2b$test$40$1$2e$54$2e$1_react$2d$dom$40$19$2e$1$2e$0_react$40$19$2e$1$2e$0_$5f$react$40$19$2e$1$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/next@15.3.5_@babel+core@7.28.0_@playwright+test@1.54.1_react-dom@19.1.0_react@19.1.0__react@19.1.0/node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react-jsx-dev-runtime.js [app-rsc] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$15$2e$3$2e$5_$40$babel$2b$core$40$7$2e$28$2e$0_$40$playwright$2b$test$40$1$2e$54$2e$1_react$2d$dom$40$19$2e$1$2e$0_react$40$19$2e$1$2e$0_$5f$react$40$19$2e$1$2e$0$2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/next@15.3.5_@babel+core@7.28.0_@playwright+test@1.54.1_react-dom@19.1.0_react@19.1.0__react@19.1.0/node_modules/next/image.js [app-rsc] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$social$2f$floating$2d$social$2d$bar$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/social/floating-social-bar.tsx [app-rsc] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$layout$2f$footer$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/layout/footer.tsx [app-rsc] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$layout$2f$header$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/layout/header.tsx [app-rsc] (ecmascript)");
+;
+;
+;
+;
+;
+const MainLayout = ({ children })=>{
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$15$2e$3$2e$5_$40$babel$2b$core$40$7$2e$28$2e$0_$40$playwright$2b$test$40$1$2e$54$2e$1_react$2d$dom$40$19$2e$1$2e$0_react$40$19$2e$1$2e$0_$5f$react$40$19$2e$1$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        className: "relative min-h-screen flex flex-col items-center justify-center",
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$15$2e$3$2e$5_$40$babel$2b$core$40$7$2e$28$2e$0_$40$playwright$2b$test$40$1$2e$54$2e$1_react$2d$dom$40$19$2e$1$2e$0_react$40$19$2e$1$2e$0_$5f$react$40$19$2e$1$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "fixed top-0 left-0 w-full h-full -z-10",
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$15$2e$3$2e$5_$40$babel$2b$core$40$7$2e$28$2e$0_$40$playwright$2b$test$40$1$2e$54$2e$1_react$2d$dom$40$19$2e$1$2e$0_react$40$19$2e$1$2e$0_$5f$react$40$19$2e$1$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$15$2e$3$2e$5_$40$babel$2b$core$40$7$2e$28$2e$0_$40$playwright$2b$test$40$1$2e$54$2e$1_react$2d$dom$40$19$2e$1$2e$0_react$40$19$2e$1$2e$0_$5f$react$40$19$2e$1$2e$0$2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
+                    src: "/bg-01.jpg",
+                    alt: "背景画像",
+                    fill: true,
+                    style: {
+                        objectFit: 'cover'
+                    },
+                    priority: true
+                }, void 0, false, {
+                    fileName: "[project]/src/components/layout/main-layout.tsx",
+                    lineNumber: 16,
+                    columnNumber: 9
+                }, this)
+            }, void 0, false, {
+                fileName: "[project]/src/components/layout/main-layout.tsx",
+                lineNumber: 15,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$15$2e$3$2e$5_$40$babel$2b$core$40$7$2e$28$2e$0_$40$playwright$2b$test$40$1$2e$54$2e$1_react$2d$dom$40$19$2e$1$2e$0_react$40$19$2e$1$2e$0_$5f$react$40$19$2e$1$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "relative z-10 flex flex-col max-w-2xl w-full",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$15$2e$3$2e$5_$40$babel$2b$core$40$7$2e$28$2e$0_$40$playwright$2b$test$40$1$2e$54$2e$1_react$2d$dom$40$19$2e$1$2e$0_react$40$19$2e$1$2e$0_$5f$react$40$19$2e$1$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$layout$2f$header$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Header"], {}, void 0, false, {
+                        fileName: "[project]/src/components/layout/main-layout.tsx",
+                        lineNumber: 27,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$15$2e$3$2e$5_$40$babel$2b$core$40$7$2e$28$2e$0_$40$playwright$2b$test$40$1$2e$54$2e$1_react$2d$dom$40$19$2e$1$2e$0_react$40$19$2e$1$2e$0_$5f$react$40$19$2e$1$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("main", {
+                        className: "flex-1",
+                        children: children
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/layout/main-layout.tsx",
+                        lineNumber: 28,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$15$2e$3$2e$5_$40$babel$2b$core$40$7$2e$28$2e$0_$40$playwright$2b$test$40$1$2e$54$2e$1_react$2d$dom$40$19$2e$1$2e$0_react$40$19$2e$1$2e$0_$5f$react$40$19$2e$1$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$layout$2f$footer$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Footer"], {}, void 0, false, {
+                        fileName: "[project]/src/components/layout/main-layout.tsx",
+                        lineNumber: 29,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$15$2e$3$2e$5_$40$babel$2b$core$40$7$2e$28$2e$0_$40$playwright$2b$test$40$1$2e$54$2e$1_react$2d$dom$40$19$2e$1$2e$0_react$40$19$2e$1$2e$0_$5f$react$40$19$2e$1$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$social$2f$floating$2d$social$2d$bar$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["FloatingSocialBar"], {}, void 0, false, {
+                        fileName: "[project]/src/components/layout/main-layout.tsx",
+                        lineNumber: 30,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/src/components/layout/main-layout.tsx",
+                lineNumber: 26,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/src/components/layout/main-layout.tsx",
+        lineNumber: 12,
+        columnNumber: 5
+    }, this);
+};
+;
+}}),
+"[project]/src/app/gallery/page.tsx [app-rsc] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { g: global, __dirname } = __turbopack_context__;
+{
+__turbopack_context__.s({
+    "default": (()=>GalleryPage),
+    "revalidate": (()=>revalidate)
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$15$2e$3$2e$5_$40$babel$2b$core$40$7$2e$28$2e$0_$40$playwright$2b$test$40$1$2e$54$2e$1_react$2d$dom$40$19$2e$1$2e$0_react$40$19$2e$1$2e$0_$5f$react$40$19$2e$1$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/next@15.3.5_@babel+core@7.28.0_@playwright+test@1.54.1_react-dom@19.1.0_react@19.1.0__react@19.1.0/node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react-jsx-dev-runtime.js [app-rsc] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$gallery$2f$gallery$2d$client$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/gallery/gallery-client.tsx [app-rsc] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$layout$2f$main$2d$layout$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/layout/main-layout.tsx [app-rsc] (ecmascript)");
+;
+;
+;
+const revalidate = 3600;
+// 作れるキャンドル作品ギャラリー
+const artworks = [
+    // 円柱キャンドル作品
+    {
+        id: 1,
+        src: 'https://imagedelivery.net/NvrRuadp8jbz6w1RVQvxOg/4d30cab2-ea7c-47d7-78d1-e7b464406700/square500',
+        title: 'ピンクの球体キャンドル',
+        category: [
+            '球体'
+        ],
+        description: 'ころんと可愛いピンクの球体キャンドル💕 優しいピンクの色合いが女性らしさを引き立て、手のひらにすっぽり収まるサイズ感も魅力的。インテリアとしてもお部屋を可愛く彩ってくれます✨',
+        width: 400,
+        height: 400
+    },
+    {
+        id: 2,
+        src: 'https://imagedelivery.net/NvrRuadp8jbz6w1RVQvxOg/30e20b47-cd64-4b58-bd73-979921c89f00/square500',
+        title: 'ゴールドラメの球体キャンドル',
+        category: [
+            '球体'
+        ],
+        description: '神秘的な青と紫のグラデーションに、きらめく金のラメが美しく輝く特別な球体キャンドル✨ まるで夜空の星々のように煌めいて、見る角度によって表情を変える魔法のような美しさです💫',
+        width: 400,
+        height: 400
+    },
+    {
+        id: 3,
+        src: 'https://imagedelivery.net/NvrRuadp8jbz6w1RVQvxOg/cf918484-b1a0-44b3-8aac-692f393e5500/square500',
+        title: 'ピンク&ブルーの貝殻キャンドル',
+        category: [
+            '貝殻'
+        ],
+        description: '宮古島の美しい海をイメージしたシェルモチーフに、ピンクから青へと移りゆく幻想的なグラデーションが施された特別な貝殻キャンドルです。3つのシェルそれぞれに異なる表情があり、海の夕焼けのような美しい色合いが魅力的✨ 海のフォルムとカラフルなグラデーションの組み合わせが、宮古島の思い出を美しく彩ります💕',
+        tags: [
+            'グラデーション',
+            'ピンク',
+            'ブルー'
+        ],
+        width: 400,
+        height: 400
+    },
+    {
+        id: 4,
+        src: 'https://imagedelivery.net/NvrRuadp8jbz6w1RVQvxOg/ea2d294e-e759-4f10-b18b-7db68eaf9900/square500',
+        title: 'お客様作品：サンセットマーブル',
+        category: [
+            '円柱'
+        ],
+        description: '宮古島の息をのむような美しいサンセットを表現した、オレンジとピンクの温かいグラデーションが心を打つ円柱キャンドルです。夕日が海に沈む瞬間の感動をそのままキャンドルに込めた、ロマンチックな作品。制作中も夕焼けの美しさを思い出しながら楽しく作業でき、完成した瞬間の感動は格別です。火を灯すと温かい光がお部屋を包み、まるで夕焼けの中にいるような幸せな気持ちに。一日の疲れを癒し、明日への活力を与えてくれる特別なキャンドルです。',
+        tags: [
+            '夕焼け',
+            'サンセット',
+            '温かい'
+        ],
+        width: 400,
+        height: 400
+    },
+    {
+        id: 5,
+        src: 'https://imagedelivery.net/NvrRuadp8jbz6w1RVQvxOg/700a5f55-75b7-47a3-7ad8-97ab04c6ed00/square500',
+        title: '貝殻2個セット（金箔オプション付き）',
+        category: [
+            '貝殻'
+        ],
+        description: '緑とオレンジの鮮やかなコントラストが美しい2個セットのシェルモチーフキャンドルです。特別な金箔オプションを追加することで、まるで宝石のように輝く豪華な仕上がりに✨ 緑は宮古島の豊かな自然を、オレンジは南国の太陽をイメージした、エネルギッシュで元気をもらえる色合い。金箔の輝きが加わることで、より特別感のある記念品として大切な思い出を美しく彩ります🌟',
+        tags: [
+            '2個セット',
+            '金箔',
+            '特別オプション'
+        ],
+        width: 400,
+        height: 400
+    },
+    {
+        id: 6,
+        src: 'https://imagedelivery.net/NvrRuadp8jbz6w1RVQvxOg/6c9be46f-926d-4fa6-ebd1-c72342046500/square500',
+        title: 'マーブル円柱2個セット',
+        category: [
+            '円柱'
+        ],
+        description: 'モノトーンの洗練された黒と白のマーブル円柱と、優しいパステルカラーのマーブル円柱の対照的な美しさが楽しめる2個セットです🎨 一つはクールでスタイリッシュ、もう一つは可愛らしく温かみのある仕上がりで、まったく異なる個性を持った作品が同時に完成✨ お部屋に並べて飾ると、まるでアートギャラリーのような上質な空間を演出できます。カップルやお友達と一緒に作れば、お互いの好みの違いも楽しめる特別な体験です💕',
+        tags: [
+            'マーブル',
+            '2個セット',
+            'モノトーン',
+            'パステル'
+        ],
+        width: 400,
+        height: 400
+    },
+    // 貝殻キャンドル作品 (7-18)
+    {
+        id: 7,
+        src: 'https://imagedelivery.net/NvrRuadp8jbz6w1RVQvxOg/179e656d-dfa4-4425-ab7b-27d94e049800/square500',
+        title: 'パープル&ピンクグラデーション球体',
+        category: [
+            '球体'
+        ],
+        description: '神秘的な紫から優雅なピンクへと美しく移り変わるグラデーションが魅力的な球体キャンドルです💜 まるで夕暮れ時の空のように、深い紫が徐々に温かいピンクに溶け込んでいく様子は見る者を魅了します。女性らしい上品な色合いで、ロマンチックな雰囲気を演出✨ 火を灯すと紫とピンクの光が幻想的に揺らめき、お部屋を優雅で特別な空間に変えてくれる、まさに大人の女性のための美しい作品です🌸',
+        tags: [
+            'グラデーション',
+            '紫',
+            'ピンク',
+            '上品'
+        ],
+        width: 400,
+        height: 400
+    },
+    {
+        id: 8,
+        src: 'https://imagedelivery.net/NvrRuadp8jbz6w1RVQvxOg/06a83b12-eb7f-49d3-b56f-da96ac37b600/square500',
+        title: 'ピンク&ホワイトグラデーション球体',
+        category: [
+            '球体'
+        ],
+        description: '優しいピンクから純白へと美しく移り変わるグラデーションが魅力的な球体キャンドルです🌸 桜の花びらのような淡いピンクが、まるで雲のような真っ白へと溶け込んでいく様子は、見ているだけで心が癒されます💕 女性らしい可愛らしさと上品さを兼ね備えた色合いで、どんなお部屋にも優しく馴染みます。火を灯すと温かいピンクの光がお部屋を包み、まるで春の陽だまりにいるような幸せな気持ちにしてくれます✨',
+        tags: [
+            'グラデーション',
+            'ピンク',
+            'ホワイト',
+            '可愛い'
+        ],
+        width: 400,
+        height: 400
+    },
+    {
+        id: 9,
+        src: 'https://imagedelivery.net/NvrRuadp8jbz6w1RVQvxOg/3499cf39-4512-43f5-d53f-3403a96b5500/square500',
+        title: 'ゴールドラメ×カラフル球体（上級者向け）',
+        category: [
+            '球体'
+        ],
+        description: '様々なカラフルな色彩と金箔ラメを組み合わせた、高度な技術と創造力が必要な上級者向けの特別な球体キャンドルです✨ 虹のような美しいカラーグラデーションに、きらめく金箔ラメが贅沢に散りばめられた、まさに芸術作品のような仕上がり🎨 制作には時間と工夫が必要ですが、完成したときの達成感と美しさは格別です。火を灯すとカラフルな色彩と金の輝きが幻想的に踊り、お部屋を魔法のような空間に変えてくれる特別な作品です🌈',
+        tags: [
+            '上級者向け',
+            '金箔',
+            'ラメ',
+            'カラフル',
+            '芸術作品'
+        ],
+        width: 400,
+        height: 400
+    },
+    {
+        id: 10,
+        src: 'https://imagedelivery.net/NvrRuadp8jbz6w1RVQvxOg/8203ac9f-2be5-423a-63b0-41900b842800/square500',
+        title: 'ブルー&パープル円柱（金箔仕上げ）',
+        category: [
+            '円柱'
+        ],
+        description: '深い青と神秘的な紫の美しいマーブル模様に、一つ一つ丁寧に金箔を散りばめた、制作時間と技術を要する本格的な力作です✨ 宮古島の夕暮れ時の海の色を表現した青紫のベースに、まるで星屑のようにきらめく金箔が贅沢に施された、プロ級の仕上がり🌟 制作には集中力と時間が必要ですが、その分完成したときの感動と達成感は格別。火を灯すと金箔が幻想的に輝き、まるで宝石のような美しい光を放つ特別な作品です💎',
+        tags: [
+            '金箔',
+            '力作',
+            'ブルー',
+            'パープル',
+            '本格的'
+        ],
+        width: 400,
+        height: 400
+    },
+    {
+        id: 11,
+        src: 'https://imagedelivery.net/NvrRuadp8jbz6w1RVQvxOg/93e2d365-1ddf-4f20-e294-bc3d1bf87d00/square500',
+        title: '球体3個セット（友達との共同制作）',
+        category: [
+            '球体'
+        ],
+        description: 'オレンジ、緑と白、白と黄色と紫の3つの異なる色合いの球体キャンドルを、友達と一緒に楽しく制作できる特別なセットです🧡💚💛 それぞれが違う個性を持った作品になるので、みんなの好みや性格が表れて盛り上がること間違いなし！制作中はワイワイ楽しく、完成後はお互いの作品を見せ合って思い出話に花が咲きます✨ 友情の証として一緒に飾ったり、一人一つずつ持ち帰って宮古島の思い出を大切にしたり、使い方も自由自在です👭',
+        tags: [
+            '3個セット',
+            '友達',
+            '共同制作',
+            'カラフル',
+            '思い出'
+        ],
+        width: 400,
+        height: 400
+    },
+    {
+        id: 12,
+        src: 'https://imagedelivery.net/NvrRuadp8jbz6w1RVQvxOg/cf6e36d2-3afe-4857-1484-b80d2db06d00/square500',
+        title: 'イエロー&ブルー球体（金箔オプション）',
+        category: [
+            '球体'
+        ],
+        description: '明るい黄色と深い青の美しいコントラストに、一つの層に金箔を贅沢に使用した特別仕様の球体キャンドルです✨ 基本の制作体験にオプションを追加することで、このような豪華な仕上がりを実現できます🌟 太陽のような温かい黄色と海のような深い青に、まばゆく輝く金箔の層が加わることで、まるでプロが作ったかのような上質な作品に。オプション追加で特別感をアップさせたい方におすすめの贅沢仕様です💛💙',
+        tags: [
+            'オプション',
+            '金箔',
+            'イエロー',
+            'ブルー',
+            '特別仕様'
+        ],
+        width: 400,
+        height: 400
+    },
+    // 球体キャンドル作品 (13-30)
+    {
+        id: 13,
+        src: 'https://imagedelivery.net/NvrRuadp8jbz6w1RVQvxOg/3b7b13b3-90ed-43e5-dbac-5491602f2e00/square500',
+        title: 'レインボー貝殻キャンドル（全色使用）',
+        category: [
+            '貝殻'
+        ],
+        description: '工房で使えるすべての色を贅沢に使った、まさに虹のように美しいカラフルなシェルモチーフキャンドルです🌈 赤、オレンジ、黄色、緑、青、紫など、ありとあらゆる色が宮古島の海をイメージしたシェルフォルムに施された、見ているだけで心が躍る豪華絢爛な作品✨ これ以上ないほどカラフルで華やかな仕上がりは、まるでトロピカルパラダイスの宝物のよう。色とりどりの美しさで、お部屋を一気に明るく楽しい空間に変えてくれる、特別な記念品です🏝️',
+        tags: [
+            '全色使用',
+            'レインボー',
+            '豪華',
+            'カラフル',
+            '特別'
+        ],
+        width: 400,
+        height: 400
+    },
+    {
+        id: 14,
+        src: 'https://imagedelivery.net/NvrRuadp8jbz6w1RVQvxOg/7616c378-8c7f-4483-cf70-b70a49639a00/square500',
+        title: '大人の球体キャンドル（レッドアクセント）',
+        category: [
+            '球体'
+        ],
+        description: '落ち着いたトーンの中に効果的な赤みを加えた、大人の女性にぴったりの洗練された球体キャンドルです💋 ベースの上品な色合いに、ほんのり温かい赤が差し色として入ることで、スタイリッシュでありながら女性らしい可愛さも表現✨ 甘すぎず、でも堅すぎない絶妙なバランスは、大人の魅力を引き立てる特別な作品。オフィスにも自宅にも馴染む上質な仕上がりで、働く女性の日常を美しく彩ってくれます🌹',
+        tags: [
+            '大人',
+            'スタイリッシュ',
+            '赤み',
+            '上品',
+            'バランス'
+        ],
+        width: 400,
+        height: 400
+    },
+    {
+        id: 15,
+        src: 'https://imagedelivery.net/NvrRuadp8jbz6w1RVQvxOg/597e7096-240d-4dae-2724-3b6fdd555d00/square500',
+        title: 'ムーンライト球体（金箔の雨）',
+        category: [
+            '球体'
+        ],
+        description: '神秘的な月の光をイメージした、白から青へと美しく移ろうグラデーションの球体キャンドルです🌙 まるで夜空に浮かぶ月のような幻想的な色合いに、金箔の雨がきらめくように散りばめられたロマンチックなアクセントが特徴✨ 静寂な夜の美しさと、星降る夜の煌めきを一つの作品に込めた、見る者の心を癒す特別なキャンドル。火を灯すと金箔が月明かりのように優しく輝き、お部屋を幻想的な夜の世界に変えてくれます🌟',
+        tags: [
+            'ムーンライト',
+            '金箔の雨',
+            'グラデーション',
+            '幻想的',
+            '月'
+        ],
+        width: 400,
+        height: 400
+    },
+    {
+        id: 16,
+        src: 'https://imagedelivery.net/NvrRuadp8jbz6w1RVQvxOg/c9757b37-882f-4c32-5e36-58cc3a7fd300/square500',
+        title: '円柱2個セット（お友達との共同制作）',
+        category: [
+            '円柱'
+        ],
+        description: 'ピンクと紫の組み合わせ、青と赤の組み合わせなど、それぞれ異なる色合いの円柱キャンドルを友達と一緒に楽しく制作できる2個セットです💕 お互いに違う色を選んで個性を表現したり、お揃いのテーマで統一感を出したり、制作過程も完成後も一緒に楽しめます✨ 友達との思い出作りにぴったりで、制作中の会話も弾むこと間違いなし！完成したら一緒に写真を撮って、素敵な宮古島の思い出として大切にしてくださいね📸',
+        tags: [
+            '2個セット',
+            '友達',
+            'ピンク',
+            '紫',
+            '青',
+            '赤'
+        ],
+        width: 400,
+        height: 400
+    },
+    {
+        id: 17,
+        src: 'https://imagedelivery.net/NvrRuadp8jbz6w1RVQvxOg/686ee542-f4b0-4c8b-9531-bb0853695500/square500',
+        title: 'シンプル貝殻（金箔ラメアクセント）',
+        category: [
+            '貝殻'
+        ],
+        description: 'あえてシンプルにデザインしながらも、金箔ラメを効果的に使うことで、自分好みの上品な仕上がりに仕上げたシェルモチーフキャンドルです✨ 派手すぎず地味すぎない、ちょうど良いバランスを大切にしながら、さりげない金箔の輝きで特別感をプラス。自分らしさを表現しつつ、どんな場所にも馴染む万能なデザインです💫 「これ、まさに私の好み！」と思える、パーソナルな美しさを追求した特別な一品です',
+        tags: [
+            'シンプル',
+            '金箔ラメ',
+            '自分好み',
+            '上品',
+            'パーソナル'
+        ],
+        width: 400,
+        height: 400
+    },
+    {
+        id: 18,
+        src: 'https://imagedelivery.net/NvrRuadp8jbz6w1RVQvxOg/f3a0e782-d27c-4025-29fa-0254c6c34900/square500',
+        title: 'オーシャングラデーション球体（金箔仕上げ）',
+        category: [
+            '球体'
+        ],
+        description: '青と緑の美しいグラデーション、紫と青の神秘的なグラデーションが織りなす、まるで宮古島の海の深さを表現したような球体キャンドルです🌊 浅瀬から深海へと移り変わる海の色彩に、きらめく金箔ラメが波の煌めきのように散りばめられた、自然の美しさと贅沢さを兼ね備えた特別な作品✨ 複数のグラデーションと金箔の組み合わせが生み出す奥深い美しさは、見る角度によって表情を変える海のように魅力的です💙💚',
+        tags: [
+            'オーシャン',
+            'グラデーション',
+            '金箔',
+            '青',
+            '緑',
+            '紫'
+        ],
+        width: 400,
+        height: 400
+    },
+    // 球体Big キャンドル作品 (19-30)
+    {
+        id: 19,
+        src: 'https://imagedelivery.net/NvrRuadp8jbz6w1RVQvxOg/ddd1c12c-b0e3-488e-c472-5fda9d005e00/square500',
+        title: 'マーブル球体Bigセット（色のリクエスト対応）',
+        category: [
+            '球体Big'
+        ],
+        description: '可愛らしいマーブル模様が特徴的な球体Bigのセット作品です💕 大きなサイズだからこそ表現できる、美しいマーブルの流れや色の混ざり合いが魅力的✨ お好みの色合いでマーブル模様を作ることができるので、予約時にご希望の色をお聞かせください🎨 「ピンクと白で可愛く」「ブルー系でクールに」「暖色系で温かく」など、あなたの理想の色合いでオリジナルのマーブルキャンドルを制作いたします。世界に一つだけの、あなただけの色の組み合わせで特別な思い出を作りましょう🌈',
+        tags: [
+            'マーブル',
+            'セット',
+            '色リクエスト',
+            'オリジナル',
+            '可愛い'
+        ],
+        width: 400,
+        height: 400
+    },
+    {
+        id: 20,
+        src: 'https://imagedelivery.net/NvrRuadp8jbz6w1RVQvxOg/af602130-42f5-4751-9606-c7e3093edb00/square500',
+        title: 'パステルピンク&パープル円柱（金箔仕上げ）',
+        category: [
+            '円柱'
+        ],
+        description: 'ピンクと紫の美しい薄色グラデーションを実現するために、着色料の配合を丁寧に調整した、技術的にも大変凝った作りの円柱キャンドルです✨ 淡いパステルカラーの繊細な美しさに、金箔ラメが上品にきらめく、まさに完成度の高い一品💕 薄い色を作るための細やかな技術と時間をかけた制作により、期待を上回る美しい仕上がりに大満足いただける特別な作品です。優しい色合いと贅沢な金箔の組み合わせが、上質で洗練された美しさを演出します🌸',
+        tags: [
+            'パステル',
+            '技術的',
+            '金箔',
+            '薄色',
+            '凝った作り'
+        ],
+        width: 400,
+        height: 400
+    },
+    {
+        id: 21,
+        src: 'https://imagedelivery.net/NvrRuadp8jbz6w1RVQvxOg/51085e79-021f-463c-18d4-c1cc03794000/square500',
+        title: '宮古島スカイ&オーシャン球体',
+        category: [
+            '球体'
+        ],
+        description: '宮古島の美しい空と海をイメージした、自然の雄大さを表現した球体キャンドルです☁️🌊 特に空のイメージがしっかりと表現されており、雲が流れる青空から海へと続く美しいグラデーションが魅力的✨ まるで宮古島の高台から見下ろした絶景のような、空の透明感と海の深さを一つの球体に込めた特別な作品。火を灯すと、宮古島で過ごした素晴らしい一日の空と海の思い出が蘇ってくる、心に残る美しいキャンドルです🏝️',
+        tags: [
+            '宮古島',
+            '空',
+            '海',
+            'スカイ',
+            '絶景'
+        ],
+        width: 400,
+        height: 400
+    },
+    {
+        id: 22,
+        src: 'https://imagedelivery.net/NvrRuadp8jbz6w1RVQvxOg/d2e7a9ab-37bb-4c56-8378-ab8f275d6c00/square500',
+        title: 'ピンク&パープル球体（初心者おすすめ）',
+        category: [
+            '球体'
+        ],
+        description: '優しいピンクと上品な紫の組み合わせが美しい、キャンドル作り初心者の方にもおすすめの球体キャンドルです💕 複雑すぎない色の組み合わせなので、初めての方でも安心して挑戦でき、きっと素敵な仕上がりになります✨ ピンクと紫の相性の良さで失敗しにくく、それでいて完成したときの満足度は抜群！「初めてでもこんなに素敵に作れた」という達成感を味わえる、キャンドル作りデビューにぴったりの作品です🌸',
+        tags: [
+            '初心者',
+            'ピンク',
+            'パープル',
+            'おすすめ',
+            'デビュー'
+        ],
+        width: 400,
+        height: 400
+    },
+    {
+        id: 23,
+        src: 'https://imagedelivery.net/NvrRuadp8jbz6w1RVQvxOg/62d8779c-44f1-49a8-d4d7-20c9ea648400/square500',
+        title: '球体ミックスセット（パープル&ブルー）',
+        category: [
+            '球体Big'
+        ],
+        description: '球体Bigと通常サイズの球体を組み合わせた、インパクト抜群の特別なセットです💜💙 紫と青のシンプルながらも洗練されたデザインで、サイズの違いが生み出すダイナミックな存在感が魅力✨ 大小の球体が並ぶことで、お部屋に立体的で印象的な空間を演出します。シンプルなカラーリングだからこそ際立つ、大きさのコントラストが見る人に強烈な印象を与える、存在感抜群の特別な作品です🔮',
+        tags: [
+            'ミックスセット',
+            'インパクト',
+            'パープル',
+            'ブルー',
+            '存在感'
+        ],
+        width: 400,
+        height: 400
+    },
+    {
+        id: 24,
+        src: 'https://imagedelivery.net/NvrRuadp8jbz6w1RVQvxOg/6fb2d7af-12ec-4058-21d6-90662cbf4a00/square500',
+        title: '進化系球体（落ち着き→カラフル変身）',
+        category: [
+            '球体'
+        ],
+        description: '最初は落ち着いた雰囲気の球体キャンドルを作ろうと思っていたのに、途中で金箔オプションやいろんな色を混ぜてみようという話になり、どんどん工夫を重ねた結果生まれた進化系の一品です✨ 制作過程でのアイデアの変化と創作の楽しさが詰まった、まさに「作りながら完成形が決まった」スペシャルな作品🎨 予定とは違う方向に進んだからこそ生まれた、予想以上に素敵な仕上がりに大満足の特別なキャンドルです💫',
+        tags: [
+            '進化系',
+            '工夫',
+            'アイデア変化',
+            '金箔オプション',
+            '創作過程'
+        ],
+        width: 400,
+        height: 400
+    },
+    {
+        id: 30,
+        src: 'https://imagedelivery.net/NvrRuadp8jbz6w1RVQvxOg/6858a5f7-e5a0-4df4-448b-98e441c56900/square500',
+        title: 'マーブル円柱2本セット（パープル&グリーン）',
+        category: [
+            '円柱'
+        ],
+        description: 'ベーシックな紫と緑の色を使いながらも、美しいマーブル柄に仕上げることでインテリアとして抜群の存在感を発揮する円柱キャンドル2本セットです💜💚 紫と緑のコントラストが素敵で、落ち着いた色合いなのに印象的な仕上がりに✨ シンプルな色使いだからこそ際立つ、マーブル模様の流れるような美しさが魅力的。お部屋に並べて飾ると、まるでアート作品のような上質な空間を演出してくれる、インテリア効果抜群の作品です🎨',
+        tags: [
+            'マーブル',
+            '2本セット',
+            'パープル',
+            'グリーン',
+            'インテリア'
+        ],
+        width: 400,
+        height: 400
+    },
+    {
+        id: 34,
+        src: 'https://imagedelivery.net/NvrRuadp8jbz6w1RVQvxOg/e69f0956-2fc6-415c-2855-af2d260f0900/square500',
+        title: '貝殻&球体セット（レインボー×サンセット）',
+        category: [
+            '貝殻',
+            '球体'
+        ],
+        description: '球体キャンドルはレインボーをイメージした虹色の美しいグラデーション、シェルモチーフキャンドルは夕日と海のコントラストを表現した、2つの異なる魅力を楽しめる特別なセットです🌈🌅 球体の方は虹のように色とりどりで明るく楽しい仕上がりに、シェルの方は宮古島の美しい夕焼けと海の深いブルーが織りなすドラマチックな色合いに✨ 全く違うテーマの2つの作品を一度に体験できる、贅沢で楽しいキャンドル作りです🏝️',
+        tags: [
+            'セット',
+            'レインボー',
+            'サンセット',
+            'シェルモチーフ',
+            '球体'
+        ],
+        width: 400,
+        height: 400
+    },
+    {
+        id: 35,
+        src: 'https://imagedelivery.net/NvrRuadp8jbz6w1RVQvxOg/9664b28d-f224-45c9-295d-abe20a8ff000/square500',
+        title: '円柱セット（イエロー×パープル&ピンク）',
+        category: [
+            '円柱'
+        ],
+        description: '明るく元気な黄色の円柱キャンドルと、上品な紫とピンクの円柱キャンドルがセットになった、コントラストが美しい2本セットです🌻💜 黄色は太陽のような温かさと明るさを表現し、紫とピンクは女性らしい優雅さと可愛らしさを表現✨ 全く異なる色の魅力を同時に楽しめるので、お部屋に並べて飾ると色のハーモニーが美しく、インテリアとしても抜群の存在感を発揮します。明るさと上品さの両方を手に入れられる、欲張りな組み合わせです💛',
+        tags: [
+            '円柱セット',
+            'イエロー',
+            'パープル',
+            'ピンク',
+            'コントラスト'
+        ],
+        width: 400,
+        height: 400
+    },
+    {
+        id: 36,
+        src: 'https://imagedelivery.net/NvrRuadp8jbz6w1RVQvxOg/e346427e-c694-45d9-1b0a-498a8934d100/square500',
+        title: 'ブルー球体（パープルアクセント）',
+        category: [
+            '球体'
+        ],
+        description: '深い青をベースにした球体キャンドルに、アクセントとして紫を効果的に取り入れた、海の深さと神秘性を表現した美しい作品です💙💜 宮古島の海の色をイメージした青に、夕暮れ時の空を思わせる紫のアクセントが加わることで、より奥深く魅力的な仕上がりに✨ 青一色では表現できない複雑な美しさを、紫のアクセントが引き立てています。シンプルでありながらも、細部にこだわった洗練された球体キャンドルです🌊',
+        tags: [
+            'ブルー',
+            'パープル',
+            'アクセント',
+            '球体',
+            '海'
+        ],
+        width: 400,
+        height: 400
+    },
+    {
+        id: 37,
+        src: 'https://imagedelivery.net/NvrRuadp8jbz6w1RVQvxOg/d4cb9de6-4b4d-44b0-a71c-554cd0da7800/square500',
+        title: 'マーブル球体（大理石調）',
+        category: [
+            '球体'
+        ],
+        description: 'まるで高級な大理石のような、白・グレー・黒の美しいマーブル模様が特徴的な球体キャンドルです🤍🖤 天然石の大理石を思わせる上品なグラデーションと流れるような模様が、見る者を魅了する洗練された作品✨ モノトーンの配色だからこそ際立つ、自然な美しさと高級感のある仕上がり。どんなインテリアにも馴染みながらも、まるで美術館に展示されているような芸術的な存在感を放つ、大人の美意識を満足させる特別なキャンドルです💎',
+        tags: [
+            '大理石調',
+            'マーブル',
+            'モノトーン',
+            '高級感',
+            '芸術的'
+        ],
+        width: 400,
+        height: 400
+    },
+    {
+        id: 38,
+        src: 'https://imagedelivery.net/NvrRuadp8jbz6w1RVQvxOg/18ae3e26-2ac9-446c-94ab-2d9b0b0cb100/square500',
+        title: 'パープル球体（初心者おすすめ）',
+        category: [
+            '球体'
+        ],
+        description: 'シンプルで美しい紫の球体キャンドルです💜 複雑な技術や工程は必要なく、初心者の方でも安心してチャレンジできる作りやすさが魅力✨ 紫という上品な色合いは失敗しにくく、どんな仕上がりになっても素敵に見えるので、キャンドル作りが初めての方には特におすすめです。シンプルだからこそ、紫の美しい色合いがしっかりと際立ち、完成したときの満足度も抜群！「初めてでも上手にできた」という自信につながる、デビュー作品にぴったりのキャンドルです🌸',
+        tags: [
+            '初心者',
+            'パープル',
+            'シンプル',
+            'おすすめ',
+            'デビュー'
+        ],
+        width: 400,
+        height: 400
+    },
+    {
+        id: 39,
+        src: 'https://imagedelivery.net/NvrRuadp8jbz6w1RVQvxOg/d78b7120-d0a3-461c-d2d0-6249bf5a8900/square500',
+        title: 'オーシャン貝殻（水色×ブルー）',
+        category: [
+            '貝殻'
+        ],
+        description: '水色と青のコントラストで海をイメージした、宮古島らしい色味のシェルモチーフキャンドルです🌊💙 浅瀬の美しい水色から深海の青まで、宮古島の海の美しいグラデーションをシェルフォルムに表現しました✨ 宮古島といえばやっぱり海！この美しい海の色を閉じ込めたキャンドルは、きっと素敵な思い出作りになります。火を灯すたびに宮古島で過ごした特別な時間を思い出し、いつまでも心に残る大切な記念品となることでしょう🏝️',
+        tags: [
+            'シェルモチーフ',
+            'オーシャン',
+            '水色',
+            'ブルー',
+            '思い出作り'
+        ],
+        width: 400,
+        height: 400
+    }
+];
+function GalleryPage() {
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$15$2e$3$2e$5_$40$babel$2b$core$40$7$2e$28$2e$0_$40$playwright$2b$test$40$1$2e$54$2e$1_react$2d$dom$40$19$2e$1$2e$0_react$40$19$2e$1$2e$0_$5f$react$40$19$2e$1$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$layout$2f$main$2d$layout$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["MainLayout"], {
+        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$15$2e$3$2e$5_$40$babel$2b$core$40$7$2e$28$2e$0_$40$playwright$2b$test$40$1$2e$54$2e$1_react$2d$dom$40$19$2e$1$2e$0_react$40$19$2e$1$2e$0_$5f$react$40$19$2e$1$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "bg-cream-white min-h-screen",
+            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$15$2e$3$2e$5_$40$babel$2b$core$40$7$2e$28$2e$0_$40$playwright$2b$test$40$1$2e$54$2e$1_react$2d$dom$40$19$2e$1$2e$0_react$40$19$2e$1$2e$0_$5f$react$40$19$2e$1$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$gallery$2f$gallery$2d$client$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["GalleryClient"], {
+                artworks: artworks
+            }, void 0, false, {
+                fileName: "[project]/src/app/gallery/page.tsx",
+                lineNumber: 375,
+                columnNumber: 9
+            }, this)
+        }, void 0, false, {
+            fileName: "[project]/src/app/gallery/page.tsx",
+            lineNumber: 374,
+            columnNumber: 7
+        }, this)
+    }, void 0, false, {
+        fileName: "[project]/src/app/gallery/page.tsx",
+        lineNumber: 373,
+        columnNumber: 5
+    }, this);
+}
+}}),
+"[project]/src/app/gallery/page.tsx [app-rsc] (ecmascript, Next.js server component)": ((__turbopack_context__) => {
+
+var { g: global, __dirname } = __turbopack_context__;
+{
+__turbopack_context__.n(__turbopack_context__.i("[project]/src/app/gallery/page.tsx [app-rsc] (ecmascript)"));
+}}),
+
+};
+
+//# sourceMappingURL=_cca33faf._.js.map

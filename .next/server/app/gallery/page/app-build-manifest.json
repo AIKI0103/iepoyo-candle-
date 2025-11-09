@@ -1,0 +1,34 @@
+{
+  "pages": {
+    "/gallery/page": [
+      "static/chunks/[root-of-the-server]__c84ea170._.css",
+      "static/chunks/a80a3_next_dist_3363af66._.js",
+      "static/chunks/src_app_layout_tsx_7c428cb0._.js",
+      "static/chunks/8f20d_framer-motion_dist_es_index_mjs_6cd7789d._.js",
+      "static/chunks/node_modules__pnpm_4e696152._.js",
+      "static/chunks/src_7fda0864._.js",
+      "static/chunks/src_app_error_tsx_8704f444._.js",
+      "static/chunks/8f20d_framer-motion_dist_es_index_mjs_4100d31d._.js",
+      "static/chunks/node_modules__pnpm_5d88c518._.js",
+      "static/chunks/src_d2dd770c._.js",
+      "static/chunks/src_app_not-found_tsx_8704f444._.js",
+      "static/chunks/_79de7c7b._.js",
+      "static/chunks/src_app_global-error_tsx_8704f444._.js",
+      "static/chunks/8f20d_framer-motion_dist_es_index_mjs_c5c1c027._.js",
+      "static/chunks/src_7a514da8._.js",
+      "static/chunks/a80a3_next_647603dd._.js",
+      "static/chunks/8484d_tailwind-merge_dist_bundle-mjs_mjs_4d8e7d9e._.js",
+      "static/chunks/8f20d_framer-motion_dist_es_1221d01e._.js",
+      "static/chunks/c0b41_motion-dom_dist_es_7e57e472._.js",
+      "static/chunks/node_modules__pnpm_30ba6529._.js",
+      "static/chunks/src_app_gallery_page_tsx_8704f444._.js",
+      "static/chunks/[turbopack]_browser_dev_hmr-client_hmr-client_ts_101a2b99._.js",
+      "static/chunks/a80a3_next_dist_compiled_4a1c5920._.js",
+      "static/chunks/a80a3_next_dist_client_98d65af3._.js",
+      "static/chunks/a80a3_next_dist_4a5ccc4e._.js",
+      "static/chunks/61dca_@swc_helpers_cjs_e27e0aca._.js",
+      "static/chunks/_e69f0d32._.js",
+      "static/chunks/_6caa8e84._.js"
+    ]
+  }
+}
