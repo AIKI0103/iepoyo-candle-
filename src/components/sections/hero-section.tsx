@@ -37,7 +37,7 @@ const HeroSection = () => {
           <p className="mx-auto mb-8 max-w-2xl text-lg leading-relaxed text-white/90 md:text-xl">
             宮古島観光の新定番！雨の日・台風の日でも安心の室内体験で、
             <br className="hidden sm:block" />
-            キラキラの海をぎゅっと閉じ込めた宝物みたいなキャンドルを手作り。
+            キラキラの海をぎゅっと閉じ込めた宝物みたいなキャンドル。
             <br className="hidden sm:block" />
             初めてでも、不器用さんでも大丈夫！記念日デート・女子旅・ファミリー旅行にぴったりの90分体験😉
           </p>
