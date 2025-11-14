@@ -17,8 +17,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            min-height: 100vh;
-            padding: 20px;
+
         }
 
         .rich-menu-container {
@@ -378,11 +377,11 @@
         // 初期化処理
         document.addEventListener('DOMContentLoaded', function() {
             const clickableElements = document.querySelectorAll('.button-section, .reservation-section');
-            
+
             clickableElements.forEach(element => {
                 element.setAttribute('tabindex', '0');
                 element.setAttribute('role', 'button');
-                
+
                 element.addEventListener('keydown', function(e) {
                     if (e.key === 'Enter' || e.key === ' ') {
                         e.preventDefault();

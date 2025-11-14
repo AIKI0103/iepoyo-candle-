@@ -173,17 +173,17 @@ function RootLayout({ children }) {
               ${__TURBOPACK__imported__module__$5b$next$5d2f$internal$2f$font$2f$google$2f$inter_8fcc3bcb$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"].variable}: ${__TURBOPACK__imported__module__$5b$next$5d2f$internal$2f$font$2f$google$2f$inter_8fcc3bcb$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"].style.fontFamily};
               ${__TURBOPACK__imported__module__$5b$next$5d2f$internal$2f$font$2f$google$2f$m_plus_rounded_1c_979f1f11$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"].variable}: ${__TURBOPACK__imported__module__$5b$next$5d2f$internal$2f$font$2f$google$2f$m_plus_rounded_1c_979f1f11$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"].style.fontFamily};
             }
-            
+
             /* Critical CSS - Above the fold */
             * {
               box-sizing: border-box;
             }
-            
+
             html {
               font-display: swap;
               scroll-behavior: smooth;
             }
-            
+
             body {
               margin: 0;
               padding: 0;
@@ -193,24 +193,24 @@ function RootLayout({ children }) {
               font-family: var(${__TURBOPACK__imported__module__$5b$next$5d2f$internal$2f$font$2f$google$2f$m_plus_rounded_1c_979f1f11$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"].variable}), var(${__TURBOPACK__imported__module__$5b$next$5d2f$internal$2f$font$2f$google$2f$inter_8fcc3bcb$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"].variable}), 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', 'Meiryo', sans-serif;
               font-display: swap;
             }
-            
+
             /* Font loading optimization */
             @font-face {
               font-family: 'Inter';
               font-display: swap;
             }
-            
+
             @font-face {
-              font-family: 'M PLUS Rounded 1c';
+              font-family: 'Shippori Mincho, serif';
               font-display: swap;
             }
-            
+
             /* LCP最適化 - Hero section */
             .hero-section {
               min-height: 100vh;
               background: linear-gradient(to bottom right, #FFF7FA, #FCE6F6);
             }
-            
+
             /* CLS防止 - 画像プレースホルダー */
             img {
               display: block;

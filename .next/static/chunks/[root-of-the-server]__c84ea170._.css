@@ -6202,14 +6202,6 @@
 }
 
 @layer components {
-  .gradient-miyako-primary {
-    background: linear-gradient(135deg, var(--miyako-blue) 0%, var(--soft-pink) 100%);
-  }
-
-  .gradient-miyako-secondary {
-    background: linear-gradient(135deg, var(--pale-lavender) 0%, var(--pastel-coral) 100%);
-  }
-
   .gradient-miyako-accent {
     background: linear-gradient(135deg, var(--gold-highlight) 0%, var(--mint-green) 100%);
   }
@@ -6416,6 +6408,10 @@
 
   .z-10 {
     z-index: 10;
+  }
+
+  .z-20 {
+    z-index: 20;
   }
 
   .z-30 {

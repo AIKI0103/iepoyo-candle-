@@ -88,12 +88,7 @@ export default async function ExperienceCategoryPage({
   return (
     <MainLayout>
       <div
-        style={{
-          minHeight: '100vh',
-          background: 'linear-gradient(to bottom right, #FFF7FA, #FCE6F6)',
-          paddingTop: '4rem',
-          paddingBottom: '4rem',
-        }}
+
       >
         <div
           style={{

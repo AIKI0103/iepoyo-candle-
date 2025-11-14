@@ -6,19 +6,10 @@ import { MainLayout } from '@/components/layout/main-layout'
 export default function AccessPage() {
   return (
     <MainLayout>
-      <div
-        style={{
-          minHeight: '100vh',
-          background:
-            'linear-gradient(to bottom right, #FFF7FA 0%, #FCE6F6 50%, #D9D9FF 100%)',
-          paddingTop: '4rem',
-          paddingBottom: '4rem',
-        }}
-      >
+
         <div
           style={{
             maxWidth: '1280px',
-            margin: '0 auto',
             padding: '0 1rem',
           }}
         >

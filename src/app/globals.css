@@ -222,21 +222,7 @@
 
 @layer components {
   /* 統一グラデーション（CSS変数で最適化） */
-  .gradient-miyako-primary {
-    background: linear-gradient(
-      135deg,
-      var(--miyako-blue) 0%,
-      var(--soft-pink) 100%
-    );
-  }
 
-  .gradient-miyako-secondary {
-    background: linear-gradient(
-      135deg,
-      var(--pale-lavender) 0%,
-      var(--pastel-coral) 100%
-    );
-  }
 
   .gradient-miyako-accent {
     background: linear-gradient(

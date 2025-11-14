@@ -24,7 +24,7 @@ const PopularProductsSection = () => {
           gradient
         />
 
-        <div className="mx-auto grid max-w-7xl grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
+        <div className="mx-auto grid max-w-sm grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-2">
           {popularMenus.map((menu, index) => (
             <Link
               key={menu.id}
@@ -44,7 +44,7 @@ const PopularProductsSection = () => {
                 animated
                 hoverEffect
                 delay={index * 0.1}
-                className="group cursor-pointer p-6 transition-transform duration-200 hover:scale-105"
+                className="group cursor-pointer p-3 transition-transform duration-200 hover:scale-105"
               >
                 {/* メニュー画像エリア */}
                 <div className="from-miyako-blue/20 to-soft-pink/20 relative mb-4 overflow-hidden rounded-lg bg-gradient-to-br">
@@ -83,16 +83,16 @@ const PopularProductsSection = () => {
 
                 {/* メニュー情報 */}
                 <div className="space-y-3">
-                  <h3 className="group-hover:text-miyako-blue font-bold text-gray-900 transition-colors duration-200">
+                  <h3 className="group-hover:text-miyako-blue text-gray-900 transition-colors duration-200 text-xs">
                     {menu.name}
                   </h3>
 
-                  <p className="line-clamp-3 text-sm text-gray-600">
+                  <p className="line-clamp-3 text-xs text-gray-600">
                     {menu.description}
                   </p>
 
                   {/* 特徴タグ */}
-                  <div className="flex flex-wrap gap-1">
+                  {/* <div className="flex flex-wrap gap-1">
                     {menu.features.slice(0, 2).map((feature) => (
                       <span
                         key={feature}
@@ -101,14 +101,14 @@ const PopularProductsSection = () => {
                         {feature}
                       </span>
                     ))}
-                  </div>
+                  </div> */}
 
                   {/* 価格と詳細ボタン */}
                   <div className="flex items-center justify-between">
-                    <span className="text-miyako-blue text-lg font-bold">
+                    <span className="text-miyako-blue text-xl font-bold">
                       {formatPrice(menu.price)}
                     </span>
-                    <span className="text-miyako-blue text-sm">
+                    <span className="text-miyako-blue text-xs">
                       詳細を見る →
                     </span>
                   </div>

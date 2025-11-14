@@ -104,13 +104,7 @@ export default function FAQPage() {
   return (
     <MainLayout>
       <div
-        style={{
-          minHeight: '100vh',
-          background:
-            'linear-gradient(to bottom right, #FFF7FA 0%, #FCE6F6 50%, #D9D9FF 100%)',
-          paddingTop: '4rem',
-          paddingBottom: '4rem',
-        }}
+
       >
         <div
           style={{

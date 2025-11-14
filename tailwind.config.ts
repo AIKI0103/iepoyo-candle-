@@ -32,7 +32,7 @@ const config: Config = {
          borderRadius: { lg: 'var(--radius)',
          md: 'calc(var(--radius) - 2px)', sm: 'calc(var(--radius) - 4px)', },
          fontFamily:
-         { sans: [ 'M PLUS Rounded 1c', 'Inter', 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', 'Meiryo', 'sans-serif', ],
+         { sans: [ 'Shippori Mincho, serif', 'Inter', 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', 'Meiryo', 'sans-serif', ],
           mono: ['Inter', 'ui-monospace', 'SFMono-Regular', 'monospace'], },
           animation: { float: 'float 3s ease-in-out infinite', },
           backgroundImage: { 'gradient-primary': 'linear-gradient(to right, var(--miyako-blue), var(--soft-pink))', 'gradient-subtle': 'linear-gradient(to bottom right, var(--miyako-blue, 0.2), var(--soft-pink, 0.2))', 'gradient-hero': 'linear-gradient(to bottom right, var(--miyako-blue), var(--pale-lavender), var(--soft-pink))', },
