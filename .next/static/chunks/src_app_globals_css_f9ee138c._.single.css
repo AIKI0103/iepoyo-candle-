@@ -614,10 +614,6 @@
     left: calc(var(--spacing) * 10);
   }
 
-  .left-\[3rem\] {
-    left: 3rem;
-  }
-
   .-z-10 {
     z-index: calc(10 * -1);
   }
@@ -640,10 +636,6 @@
 
   .z-50 {
     z-index: 50;
-  }
-
-  .z-\[-222\] {
-    z-index: -222;
   }
 
   .z-\[9998\] {
@@ -738,10 +730,6 @@
 
   .mr-4 {
     margin-right: calc(var(--spacing) * 4);
-  }
-
-  .mr-10 {
-    margin-right: calc(var(--spacing) * 10);
   }
 
   .mr-\[1rem\] {
@@ -2137,10 +2125,6 @@
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
   }
 
-  .mask-left {
-    mask-position: 0;
-  }
-
   .object-contain {
     object-fit: contain;
   }
@@ -2484,22 +2468,6 @@
 
   .opacity-0 {
     opacity: 0;
-  }
-
-  .opacity-2 {
-    opacity: .02;
-  }
-
-  .opacity-5 {
-    opacity: .05;
-  }
-
-  .opacity-6 {
-    opacity: .06;
-  }
-
-  .opacity-7 {
-    opacity: .07;
   }
 
   .opacity-15 {
