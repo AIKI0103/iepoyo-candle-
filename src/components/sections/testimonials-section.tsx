@@ -51,9 +51,15 @@ const TestimonialsSection = () => {
   return (
     <section className="bg-white py-30  opacity-0 relative mask-clip">
       <div className="container mx-auto px-4">
-        <SectionHeading title="体験された方のリアルな声をご紹介" subtitle="pick up Voice" gradient />
+        <SectionHeading
+         title={
+         <>
+         体験された方の<br className="block md:hidden" />リアルな声をご紹介
+         </>
+        }
+        subtitle="pick up Voice" gradient />
 
-        <div className="mx-auto max-w-5xl flex gap-x-5">
+        <div className="mx-auto max-w-5xl flex-col mb-[2rem] md:mb-[0rem] md:flex md:gap-x-5">
           {testimonials.map((t) => (
             <div
               key={t.id}
@@ -61,8 +67,8 @@ const TestimonialsSection = () => {
         bg-white w-[18rem]   /* 全体を小さく */
    shadow-md overflow-hidden border border-gray-100
         transform transition-all duration-1000
-        rotate-[-2deg] hover:rotate-0 hover:scale-105
-        mx-auto
+         raotate-0 md:rotate-[-2deg] hover:rotate-0 hover:scale-105
+        mx-auto mb-[2rem] md:mb-0
 
       "
             >
@@ -118,7 +124,7 @@ const TestimonialsSection = () => {
           style={{ animationDelay: '800ms' }}
         >
           <div className="mb-4 text-4xl">📸</div>
-          <h3 className="mb-4 text-2xl font-bold text-gray-900">あなたの素敵な作品も、ぜひシェアしてくださいね！</h3>
+          <h3 className="mb-4 text-1xl font-bold text-gray-900">あなたの素敵な作品も、<br className="block md:hidden" />ぜひシェアしてくださいね！</h3>
           <p className="mb-6 text-gray-600">
             ハッシュタグ{' '}
             <a
