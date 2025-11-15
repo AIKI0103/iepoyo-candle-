@@ -6,7 +6,7 @@ import { cn } from '@/lib/utils'
 
 export interface GradientButtonProps
   extends Omit<ButtonHTMLAttributes<HTMLButtonElement>, 'size'> {
-  variant?: 'primary' | 'secondary' | 'accent' | 'success' | 'warning'
+  variant?: 'primary' | 'secondary' | 'accent' | 'success' | 'warning'| 'pink'
   size?: 'xs' | 'sm' | 'md' | 'lg' | 'xl'
   children: ReactNode
   className?: string
@@ -35,11 +35,13 @@ const GradientButton = forwardRef<HTMLButtonElement, GradientButtonProps>(
     const isDisabled = disabled || loading
 
     const baseClasses =
-      'group relative inline-flex items-center justify-center whitespace-nowrap rounded-2xl font-medium transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 hover:scale-105 active:scale-95 overflow-hidden'
+      'group relative inline-flex items-center justify-center whitespace-nowrap font-medium transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 hover:scale-105 active:scale-95 overflow-hidden'
 
     const variantClasses = {
       primary:
         'bg-miyako-blue text-white shadow-lg hover:shadow-xl hover:bg-miyako-blue/90',
+      pink:
+        'bg-soft-pink text-white shadow-lg hover:shadow-xl hover:bg-soft-pink/90',
       secondary:
         'bg-pale-lavender text-gray-800 shadow-md hover:shadow-lg hover:bg-pale-lavender/90',
       accent:

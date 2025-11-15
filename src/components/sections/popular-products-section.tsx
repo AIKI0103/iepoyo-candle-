@@ -9,130 +9,120 @@ import { GradientButton } from '@/components/ui/gradient-button'
 import { CardImage } from '@/components/ui/optimized-image'
 import { SectionHeading } from '@/components/ui/section-heading'
 
+import GSAPFadeIn from '@/components/GSAPFadeIn' // 追加
+
 const PopularProductsSection = () => {
-  // 人気度順でソートして表示
-  const popularMenus = [...EXPERIENCE_MENUS].sort(
-    (a, b) => b.popularity - a.popularity
-  )
+  const popularMenus = [...EXPERIENCE_MENUS].sort((a, b) => b.popularity - a.popularity)
+  const menu = popularMenus[0]
 
   return (
-    <section className="from-pastel-coral/10 to-pale-lavender/10 bg-gradient-to-br py-20">
-      <div className="container mx-auto px-4">
-        <SectionHeading
-          title="人気の体験メニューをご紹介✨"
-          subtitle="どんな素敵なキャンドルが作れるか、人気のメニューをチェック！"
-          gradient
-        />
+    <section className="from-pastel-coral/10 to-pale-lavender/10 bg-gradient-to-br py-20 relative">
+      {/* GSAPFadeIn を読み込む */}
+      <GSAPFadeIn />
 
-        <div className="mx-auto grid max-w-sm grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-2">
-          {popularMenus.map((menu, index) => (
-            <Link
-              key={menu.id}
-              href={`/experience/${
-                menu.id === 'cylinder'
-                  ? 'enkei'
-                  : menu.id === 'shell'
-                    ? 'kaigara'
-                    : menu.id === 'sphere'
-                      ? 'kyutai'
-                      : menu.id === 'sphere-big'
-                        ? 'kyutai-big'
-                        : 'enkei'
-              }`}
-            >
-              <Card
-                animated
-                hoverEffect
-                delay={index * 0.1}
-                className="group cursor-pointer p-3 transition-transform duration-200 hover:scale-105"
-              >
-                {/* メニュー画像エリア */}
-                <div className="from-miyako-blue/20 to-soft-pink/20 relative mb-4 overflow-hidden rounded-lg bg-gradient-to-br">
-                  <CardImage
-                    src={menu.image}
-                    alt={`${menu.name} - 宮古島で人気のキャンドル体験`}
-                    width={400}
-                    height={400}
-                    className="aspect-square h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
-                    cloudflareOptions={{
-                      width: 400,
-                      height: 400,
-                      quality: 85,
-                      format: 'webp',
-                      fit: 'cover',
-                    }}
-                    customSizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
-                  />
+      <SectionHeading
+        title="宮古島の海を感じるキャンドル体験"
+        subtitle="Candle Making Experience"
+        gradient
+      />
 
-                  {/* バッジ */}
-                  {menu.badge && (
-                    <Badge className="bg-gold-highlight absolute top-2 left-2 text-gray-900">
-                      {menu.badge}
-                    </Badge>
-                  )}
-
-                  {/* 人気度表示 */}
-                  <div className="absolute top-2 right-2 flex items-center gap-1 rounded-full bg-white/90 px-2 py-1 text-xs font-medium backdrop-blur-sm">
-                    <span className="text-gold-highlight">⭐</span>
-                    <span>{menu.popularity}%</span>
-                  </div>
-
-                  {/* ホバー効果 */}
-                  <div className="absolute inset-0 bg-black/0 transition-all duration-300 group-hover:bg-black/10" />
-                </div>
-
-                {/* メニュー情報 */}
-                <div className="space-y-3">
-                  <h3 className="group-hover:text-miyako-blue text-gray-900 transition-colors duration-200 text-xs">
-                    {menu.name}
-                  </h3>
-
-                  <p className="line-clamp-3 text-xs text-gray-600">
-                    {menu.description}
-                  </p>
-
-                  {/* 特徴タグ */}
-                  {/* <div className="flex flex-wrap gap-1">
-                    {menu.features.slice(0, 2).map((feature) => (
-                      <span
-                        key={feature}
-                        className="bg-pale-lavender/30 rounded px-2 py-1 text-xs text-gray-600"
-                      >
-                        {feature}
-                      </span>
-                    ))}
-                  </div> */}
-
-                  {/* 価格と詳細ボタン */}
-                  <div className="flex items-center justify-between">
-                    <span className="text-miyako-blue text-xl font-bold">
-                      {formatPrice(menu.price)}
-                    </span>
-                    <span className="text-miyako-blue text-xs">
-                      詳細を見る →
-                    </span>
-                  </div>
-                </div>
-              </Card>
+      <div className="max-w-6xl mx-auto mt-12 flex flex-col lg:flex-row gap-8 justify-center items-center md:items-start relative">
+        {/* 左: 大きな画像と下に文章 */}
+        <div className="flex flex-col md:items-start w-[327.67px] mask-clip ">
+          <CardImage
+            src={popularMenus[0].image}
+            alt={`${popularMenus[0].name} - 宮古島で人気のキャンドル体験`}
+            width={300.67}
+            height={300.67}
+            className="rounded-lg object-cover w-[327.67px] h-[327.67px]"
+          />
+          <h2 className="text-1xl font-bold text-gray-900 mt-2">{popularMenus[0].name}</h2>
+          <p className="text-gray-600 text-[1rem]">{popularMenus[0].description}</p>
+          <div className="flex items-center justify-between mr-4 w-[327.67px]">
+            <span className="text-miyako-blue text-[1rem] justify-between">{formatPrice(popularMenus[0].price)}</span>
+            <Link href={`/experience/${popularMenus[0].id}`}>
+              <span className="text-miyako-blue text-sm cursor-pointer">詳細を見る →</span>
             </Link>
-          ))}
+          </div>
         </div>
 
-        {/* セクション下部CTA */}
-        <div
-          className="animate-in fade-in slide-in-from-bottom-4 mt-12 text-center duration-600"
-          style={{ animationDelay: '800ms' }}
-        >
-          <p className="mb-6 text-gray-600">
-            もちろん、体験でご自身で作ることも、完成品をご購入いただくことも可能です。
-          </p>
+        {/* 右: 小さいカード2つ */}
+        <div className="flex flex-col gap-6">
+          {popularMenus.slice(1, 3).map((menu) => (
+            <div key={menu.id} className="flex flex-col sm:flex-row gap-4 fade-in">
+              <CardImage
+                src={menu.image}
+                alt={`${menu.name} - 宮古島で人気のキャンドル体験`}
+                width={203.67}
+                height={203.67}
+                className="rounded-lg object-cover w-[203.67px] h-[203.67px]"
+              />
+              <div className="flex flex-col justify-between w-[203.67px]">
+                <div>
+                  <h3 className="text-1xl font-bold text-gray-900 mt-2">{menu.name}</h3>
+                  <p className="text-gray-600 text-sm mt-1">{menu.description}</p>
+                </div>
+                <div className="flex items-center justify-between mt-2">
+                  <span className="text-miyako-blue text-sm font-bold">{formatPrice(menu.price)}</span>
+                  <Link href={`/experience/${menu.id}`}>
+                    <span className="text-miyako-blue text-xs cursor-pointer">詳細を見る →</span>
+                  </Link>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* 下部CTA */}
+      <div className="mask-clip  mt-12 text-center">
+        <p className="mb-6 text-gray-600">
+          もちろん、体験でご自身で作ることも、完成品をご購入いただくことも可能です。
+        </p>
+        <div className="flex justify-center gap-4">
           <Link href="/gallery">
-            <GradientButton size="lg" variant="secondary">
-              🎨 何が作れるか見てみる
+            <GradientButton size="lg" variant="pink">
+              体験メニューを見る
+            </GradientButton>
+          </Link>
+          <Link href="/gallery">
+            <GradientButton size="lg" variant="pink">
+              何が作れるか見てみる
             </GradientButton>
           </Link>
         </div>
       </div>
+<div className="relative w-full h-24 overflow-hidden opacity-20">
+  <div
+    className="absolute whitespace-nowrap font-bold text-6xl flex"
+    style={{
+      background: 'linear-gradient(to right, #4FC3E7, #F4C2C1)',
+      WebkitBackgroundClip: 'text',
+      WebkitTextFillColor: 'transparent',
+      backgroundClip: 'text',
+      animation: 'slideText 40s linear infinite',
+    }}
+  >
+    {/* 文字列を2回だけでOK */}
+    <span className="mr-[1rem]">iepoyo&nbsp;candle&nbsp;iepoyo&nbsp;candle</span>
+    <span className="mr-[1rem]">iepoyo&nbsp;candle&nbsp;iepoyo&nbsp;candle</span>
+
+  </div>
+
+  <style jsx>{`
+    @keyframes slideText {
+      0% {
+        transform: translateX(100%); /* 右からスタート */
+      }
+      100% {
+        transform: translateX(-100%); /* 左に全部流れる */
+      }
+    }
+  `}</style>
+</div>
+
+
+
     </section>
   )
 }

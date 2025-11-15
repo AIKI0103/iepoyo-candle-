@@ -7,11 +7,7 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
 const nextConfig: NextConfig = {
   // Core Web Vitals最適化設定
   experimental: {
-    optimizePackageImports: [
-      'lucide-react',
-      '@radix-ui/react-separator',
-      '@radix-ui/react-slot',
-    ],
+    optimizePackageImports: ['lucide-react', '@radix-ui/react-separator', '@radix-ui/react-slot'],
     optimizeServerReact: true,
   },
 

@@ -249,7 +249,6 @@ const Header = () => {
                   background: 'linear-gradient(to right, #4FC3E7, #F4C2C1)',
                   color: 'white',
                   padding: '14px 24px',
-                  borderRadius: '25px',
                   textDecoration: 'none',
                   fontSize: '16px',
                   fontWeight: '600',
