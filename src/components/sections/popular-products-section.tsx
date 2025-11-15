@@ -16,12 +16,23 @@ const PopularProductsSection = () => {
   const menu = popularMenus[0]
 
   return (
-    <section className="from-pastel-coral/10 to-pale-lavender/10 bg-gradient-to-br py-20 relative">
-      {/* GSAPFadeIn を読み込む */}
+<section className="relative py-20 bg-gradient-to-br from-pink-400/60 via-white/60 to-blue-400/60 overflow-hidden">
+  {/* 背景画像用の絶対配置 div */}
+  <div
+    className="absolute inset-0 bg-[url('/bg-star.jpg')] bg-cover bg-center opacity-20 z-0"
+  />
+    <div
+    className="absolute inset-0 bg-[url('/yuruhuwa-bg.jpg')] bg-cover bg-center opacity-70 z-0 my-[3rem] mx-[1rem] md:mx-[5rem] rounded-2xl"
+  />
       <GSAPFadeIn />
 
       <SectionHeading
-        title="宮古島の海を感じるキャンドル体験"
+          title={
+    <>
+      宮古島の海を感じる<br className="block md:hidden" />
+      キャンドル体験
+    </>
+  }
         subtitle="Candle Making Experience"
         gradient
       />
@@ -77,11 +88,11 @@ const PopularProductsSection = () => {
       {/* 下部CTA */}
       <div className="mask-clip  mt-12 text-center">
         <p className="mb-6 text-gray-600">
-          もちろん、体験でご自身で作ることも、完成品をご購入いただくことも可能です。
+          もちろん、体験でご自身で作ることも、<br className="block md:hidden" />完成品をご購入いただくことも可能です。
         </p>
-        <div className="flex justify-center gap-4">
+        <div className="flex-col md:flex justify-center md:gap-4">
           <Link href="/gallery">
-            <GradientButton size="lg" variant="pink">
+            <GradientButton size="lg" variant="pink" className="w-[243px] mb-[2rem] md:mb-0">
               体験メニューを見る
             </GradientButton>
           </Link>
@@ -120,9 +131,6 @@ const PopularProductsSection = () => {
     }
   `}</style>
 </div>
-
-
-
     </section>
   )
 }
