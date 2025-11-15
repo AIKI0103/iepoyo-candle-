@@ -87,7 +87,7 @@
 
   /* 宮古島キャンドルサイト カスタムカラー - サンリオスタイル */
   --miyako-blue: oklch(0.753 0.124 212.53); /* #4FC3E7 */
-  --soft-pink: hsl(336.15deg 75% 59.22%); /* 新しい料金表示カラー */
+  --soft-pink: hsl(336, 100%, 81%); /* 新しい料金表示カラー */
   --pale-lavender: oklch(0.895 0.057 277.34); /* #D9D9FF */
   --cream-white: oklch(0.986 0.012 327.43); /* #FFF7FA */
   --pastel-coral: oklch(0.938 0.024 327.43); /* #FCE6F6 */

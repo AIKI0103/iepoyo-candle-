@@ -11,14 +11,6 @@ interface MainLayoutProps {
 const MainLayout = ({ children }: MainLayoutProps) => {
   return (
     <>
-      {/* ✅ GSAPアニメーションの起動 */}
-      <GSAPFadeIn />
-
-      <div className="relative min-h-screen flex flex-col items-center justify-center">
-        {/* 背景画像（固定） */}
-        <div className="fixed bottom-0 left-0 fade-in opacity-0 ">
-          <Image src="/candle1.jpg" alt="" width={300} height={200} />
-        </div>
 
         {/* 前景コンテンツ */}
         <div className="relative flex flex-col w-full">
@@ -27,9 +19,7 @@ const MainLayout = ({ children }: MainLayoutProps) => {
           <Footer />
           <FloatingSocialBar />
         </div>
-      </div>
-    </>
-  )
-}
+</>
 
+)}
 export { MainLayout }

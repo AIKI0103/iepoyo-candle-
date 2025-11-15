@@ -58,7 +58,7 @@ const CTASection = () => {
           <div className="animate-in fade-in slide-in-from-bottom-4 flex flex-col items-center justify-center gap-4 delay-600 duration-800 sm:flex-row">
             <Link href="/reservation">
               <GradientButton
-                size="lg"
+                size="md"
                 variant="secondary"
                 className="min-w-64"
               >
