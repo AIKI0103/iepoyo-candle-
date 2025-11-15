@@ -55,7 +55,7 @@ export default function GSAPAnimations() {
         { clipPath: 'inset(0 100% 0 0)', opacity: 1 }, // 右側で隠れている状態
         {
           clipPath: 'inset(0 0% 0 0)', // 完全に表示
-          duration: 20000,
+          duration: 2,
           ease: 'power2.out',
           scrollTrigger: {
             trigger: el,
