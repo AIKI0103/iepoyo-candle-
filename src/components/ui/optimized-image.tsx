@@ -184,7 +184,7 @@ export const ThumbnailImage = forwardRef<HTMLImageElement, OptimizedImageProps>(
     <OptimizedImage
       ref={ref}
       preset="thumbnail"
-      className={cn('h-16 w-16 rounded-lg', className)}
+      className={cn('h-16 w-16', className)}
       {...props}
     />
   )
