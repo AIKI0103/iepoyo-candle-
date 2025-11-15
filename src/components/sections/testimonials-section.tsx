@@ -59,7 +59,7 @@ const TestimonialsSection = () => {
               key={t.id}
               className="
         bg-white w-[18rem]   /* 全体を小さく */
-        rounded-2xl shadow-md overflow-hidden border border-gray-100
+   shadow-md overflow-hidden border border-gray-100
         transform transition-all duration-1000
         rotate-[-2deg] hover:rotate-0 hover:scale-105
         mx-auto

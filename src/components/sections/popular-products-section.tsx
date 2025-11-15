@@ -34,7 +34,7 @@ const PopularProductsSection = () => {
             alt={`${popularMenus[0].name} - 宮古島で人気のキャンドル体験`}
             width={300.67}
             height={300.67}
-            className="rounded-lg object-cover w-[327.67px] h-[327.67px]"
+            className="object-cover w-[327.67px] h-[327.67px]"
           />
           <h2 className="text-1xl font-bold text-gray-900 mt-2">{popularMenus[0].name}</h2>
           <p className="text-gray-600 text-[1rem]">{popularMenus[0].description}</p>
@@ -55,7 +55,7 @@ const PopularProductsSection = () => {
                 alt={`${menu.name} - 宮古島で人気のキャンドル体験`}
                 width={203.67}
                 height={203.67}
-                className="rounded-lg object-cover w-[203.67px] h-[203.67px]"
+                className="object-cover w-[203.67px] h-[203.67px]"
               />
               <div className="flex flex-col justify-between w-[203.67px]">
                 <div>
