@@ -47,7 +47,7 @@ const PopularProductsSection = () => {
             height={300.67}
             className="object-cover w-[327.67px] h-[327.67px]"
           />
-          <h2 className="text-1xl font-bold text-gray-900 mt-2">{popularMenus[0].name}</h2>
+          <h3 className="text-1xl font-bold text-gray-900 mt-2">{popularMenus[0].name}</h3>
           <p className="text-gray-600 text-[1rem]">{popularMenus[0].description}</p>
           <div className="flex items-center justify-between mr-4 w-[327.67px]">
             <span className="text-miyako-blue text-[1rem] justify-between">{formatPrice(popularMenus[0].price)}</span>

@@ -2,25 +2,25 @@
   "pages": {
     "/_not-found/page": [
       "static/chunks/[root-of-the-server]__abd11cac._.css",
-      "static/chunks/46a0d_next_dist_c67faabf._.js",
-      "static/chunks/src_app_layout_tsx_e00071b4._.js",
-      "static/chunks/8f20d_framer-motion_dist_es_index_mjs_f624273c._.js",
-      "static/chunks/node_modules__pnpm_44ef9f98._.js",
+      "static/chunks/078ac_next_dist_6b54a200._.js",
+      "static/chunks/src_app_layout_tsx_61dbcee4._.js",
+      "static/chunks/fde37_framer-motion_dist_es_index_mjs_363818b7._.js",
+      "static/chunks/node_modules__pnpm_4e83d1c8._.js",
       "static/chunks/src_7fda0864._.js",
-      "static/chunks/src_app_error_tsx_3806ef90._.js",
-      "static/chunks/8f20d_framer-motion_dist_es_index_mjs_2c027c95._.js",
-      "static/chunks/node_modules__pnpm_6f97e246._.js",
+      "static/chunks/src_app_error_tsx_711354ff._.js",
+      "static/chunks/fde37_framer-motion_dist_es_index_mjs_f9f58ff4._.js",
+      "static/chunks/node_modules__pnpm_7a62d78f._.js",
       "static/chunks/src_d2dd770c._.js",
-      "static/chunks/src_app_not-found_tsx_3806ef90._.js",
-      "static/chunks/_adc74b37._.js",
-      "static/chunks/src_app_global-error_tsx_3806ef90._.js",
-      "static/chunks/[turbopack]_browser_dev_hmr-client_hmr-client_ts_5679ca5a._.js",
-      "static/chunks/46a0d_next_dist_compiled_c488ed94._.js",
-      "static/chunks/46a0d_next_dist_client_8454df4e._.js",
-      "static/chunks/46a0d_next_dist_6c1267bd._.js",
+      "static/chunks/src_app_not-found_tsx_711354ff._.js",
+      "static/chunks/_2a29377d._.js",
+      "static/chunks/src_app_global-error_tsx_711354ff._.js",
+      "static/chunks/[turbopack]_browser_dev_hmr-client_hmr-client_ts_eca9a946._.js",
+      "static/chunks/078ac_next_dist_compiled_afbc6318._.js",
+      "static/chunks/078ac_next_dist_client_17672085._.js",
+      "static/chunks/078ac_next_dist_6a9b15bf._.js",
       "static/chunks/61dca_@swc_helpers_cjs_e27e0aca._.js",
       "static/chunks/_e69f0d32._.js",
-      "static/chunks/_41280e21._.js"
+      "static/chunks/_5e95dcc4._.js"
     ]
   }
 }

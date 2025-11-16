@@ -6,12 +6,12 @@
   "rootMainFiles": [],
   "pages": {
     "/_error": [
-      "static/chunks/[root-of-the-server]__ab83085c._.js",
-      "static/chunks/a14e7_react-dom_638ad3bb._.js",
-      "static/chunks/node_modules__pnpm_51c25b77._.js",
+      "static/chunks/[root-of-the-server]__9a4e0fe8._.js",
+      "static/chunks/5ccab_react-dom_f1cc840e._.js",
+      "static/chunks/node_modules__pnpm_3e877b72._.js",
       "static/chunks/[root-of-the-server]__923cb372._.js",
       "static/chunks/pages__error_5771e187._.js",
-      "static/chunks/pages__error_4a33b873._.js"
+      "static/chunks/pages__error_4b16ba6e._.js"
     ]
   },
   "ampFirstPages": []
