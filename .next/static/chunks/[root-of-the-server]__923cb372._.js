@@ -467,7 +467,7 @@ function triggerUpdate(msg) {
 
 var { g: global, __dirname, m: module } = __turbopack_context__;
 {
-__turbopack_context__.r("[next]/entry/page-loader.ts { PAGE => \"[project]/node_modules/.pnpm/next@15.3.5_@babel+core@7.28.0_@playwright+test@1.54.1_react-dom@19.1.0_react@19.1.0__react@19.1.0_sass@1.94.0/node_modules/next/error.js [client] (ecmascript)\" } [client] (ecmascript)");
+__turbopack_context__.r("[next]/entry/page-loader.ts { PAGE => \"[project]/node_modules/.pnpm/next@15.3.5_@babel+core@7.28.5_@playwright+test@1.56.1_react-dom@19.2.0_react@19.2.0__react@19.2.0_sass@1.94.0/node_modules/next/error.js [client] (ecmascript)\" } [client] (ecmascript)");
 }}),
 }]);
 

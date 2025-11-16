@@ -3413,12 +3413,6 @@
   }
 
   @media (width >= 48rem) {
-    .md\:mb-\[0rem\] {
-      margin-bottom: 0;
-    }
-  }
-
-  @media (width >= 48rem) {
     .md\:block {
       display: block;
     }

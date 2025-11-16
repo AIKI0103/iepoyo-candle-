@@ -39,14 +39,17 @@ const config: Config = {
       },
       fontFamily: {
         sans: [
-          'Shippori Mincho, serif',
           'Inter',
+          'Shippori Mincho, serif',
           'Hiragino Kaku Gothic ProN',
           'Hiragino Sans',
           'Meiryo',
           'sans-serif',
         ],
+        gothic:['Hiragino Kaku Gothic ProN','Hiragino Sans',
+          'Meiryo'],
         mono: ['Inter', 'ui-monospace', 'SFMono-Regular', 'monospace'],
+
       },
       animation: {
         float: 'float 3s ease-in-out infinite',

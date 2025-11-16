@@ -12,7 +12,7 @@ const TestimonialsSection = () => {
       location: '愛知県',
       rating: 5,
       comment:
-        '台風で観光ができなくなったときに体験しました。室内で楽しめて本当に助かった！二人で作ったキャンドルは今も部屋に飾っています。',
+        '1年記念に念願の宮古島旅行🌺🌊台風で観光できなくなってショックだったけど、急遽キャンドルづくり体験してみた🕯️意外と簡単にできて、出来栄えも満足！！',
       experience: ['#宮古島', '#カップル旅行', '#雨でも楽しめる', '#アロマキャンドル'],
       date: '2024年1月',
       avatar: '👫',
@@ -26,8 +26,8 @@ const TestimonialsSection = () => {
       location: '東京都',
       rating: 4,
       comment:
-        '以前からインスタで見てて気になって予約しました！ゆっくり座って作業できたのでリラックスできました！作ったキャンドルはおそろいで今も大事に飾っています。',
-      experience: ['#宮古島旅行', '#手作り体験', '#思い出作り', '#カップル旅', '#おしゃれ'],
+        '前から気になってたキャンドルづくりやっと行けた〜🎀宮古島の海をイメージして作ってみたよ🏝️キラキラしててかわいい😍❤️帰ったらリビングに飾ろうっと。',
+      experience: ['#宮古島旅行', '#手作り体験', '#キャンドルづくり', '#貝殻キャンドル', '#おしゃれ'],
       date: '2024年2月',
       avatar: '💑',
       image: '/insta-post__list/candle1.jpg',
@@ -40,7 +40,7 @@ const TestimonialsSection = () => {
       location: '大阪府',
       rating: 5,
       comment:
-        '雨だったので参加しましたが、室内で楽しめました。色を選ぶのが想像以上に盛り上がって、旅のハイライトになりました！完成したキャンドルは今もお気に入りです。',
+        '女子旅in宮古島🏝️🌺海綺麗すぎて感動🥺2日目はキャンドルづくり初体験！型とかあって好きなデザイン選べるの楽しい！グラデとキラキラ感が夕日っぽくて見てるだけで癒される🌇',
       experience: ['#宮古島女子旅', '#旅行好き', '#癒し時間', '#映えスポット', '#trip'],
       date: '2024年3月',
       avatar: '👭',
@@ -59,7 +59,7 @@ const TestimonialsSection = () => {
         }
         subtitle="pick up Voice" gradient />
 
-        <div className="mx-auto max-w-5xl flex-col mb-[2rem] md:mb-[0rem] md:flex md:gap-x-5">
+        <div className="mx-auto max-w-5xl mb-8 md:mb-0 flex flex-col md:flex-row md:gap-x-5">
           {testimonials.map((t) => (
             <div
               key={t.id}
@@ -68,7 +68,7 @@ const TestimonialsSection = () => {
    shadow-md overflow-hidden border border-gray-100
         transform transition-all duration-1000
          raotate-0 md:rotate-[-2deg] hover:rotate-0 hover:scale-105
-        mx-auto mb-[2rem] md:mb-0
+        mx-auto mb-8 md:mb-0
 
       "
             >
@@ -76,7 +76,7 @@ const TestimonialsSection = () => {
               <div className="p-4 flex items-center justify-between">
                 <div className="flex items-center">
                   <div className="text-2xl mr-3">{t.avatar}</div>
-                  <div className="flex flex-col leading-tight">
+                  <div className="md:flex flex-col leading-tight">
                     <span className="text-gray-900 text-xs">{t.name}</span>
                     <span className="text-xs text-gray-500">{t.location}</span>
                   </div>
@@ -100,7 +100,7 @@ const TestimonialsSection = () => {
               </div>
 
               {/* --- コメント --- */}
-              <p className="px-4 mt-2 text-gray-800 leading-relaxed text-[0.7rem]">{t.comment}</p>
+              <p className="px-4 mt-2 font-gothic text-gray-800 leading-relaxed text-[0.7rem]">{t.comment}</p>
 
               {/* --- Tag --- */}
               <div className="px-4 mt-3">
