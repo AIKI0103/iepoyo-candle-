@@ -698,40 +698,12 @@
     margin-inline: 1rem;
   }
 
-  .mx-\[5rem\] {
-    margin-inline: 5rem;
-  }
-
-  .mx-\[10rem\] {
-    margin-inline: 10rem;
-  }
-
-  .mx-\[20rem\] {
-    margin-inline: 20rem;
-  }
-
   .mx-auto {
     margin-inline: auto;
   }
 
-  .my-18 {
-    margin-block: calc(var(--spacing) * 18);
-  }
-
-  .my-19 {
-    margin-block: calc(var(--spacing) * 19);
-  }
-
-  .my-20 {
-    margin-block: calc(var(--spacing) * 20);
-  }
-
   .my-\[3rem\] {
     margin-block: 3rem;
-  }
-
-  .my-\[4rem\] {
-    margin-block: 4rem;
   }
 
   .mt-1 {
@@ -1155,10 +1127,6 @@
     scale: var(--tw-scale-x) var(--tw-scale-y);
   }
 
-  .rotate-\[-2deg\] {
-    rotate: -2deg;
-  }
-
   .transform {
     transform: var(--tw-rotate-x, ) var(--tw-rotate-y, ) var(--tw-rotate-z, ) var(--tw-skew-x, ) var(--tw-skew-y, );
   }
@@ -1297,10 +1265,6 @@
     margin-block-end: calc(calc(var(--spacing) * 6) * calc(1 - var(--tw-space-y-reverse)));
   }
 
-  .gap-x-5 {
-    column-gap: calc(var(--spacing) * 5);
-  }
-
   :where(.space-x-1 > :not(:last-child)) {
     --tw-space-x-reverse: 0;
     margin-inline-start: calc(calc(var(--spacing) * 1) * var(--tw-space-x-reverse));
@@ -1311,10 +1275,6 @@
     --tw-space-x-reverse: 0;
     margin-inline-start: calc(calc(var(--spacing) * 2) * var(--tw-space-x-reverse));
     margin-inline-end: calc(calc(var(--spacing) * 2) * calc(1 - var(--tw-space-x-reverse)));
-  }
-
-  .gap-y-1 {
-    row-gap: calc(var(--spacing) * 1);
   }
 
   .truncate {
@@ -2223,10 +2183,6 @@
     background-position: center;
   }
 
-  .bg-no-repeat {
-    background-repeat: no-repeat;
-  }
-
   .object-contain {
     object-fit: contain;
   }
@@ -2321,10 +2277,6 @@
 
   .py-16 {
     padding-block: calc(var(--spacing) * 16);
-  }
-
-  .py-19 {
-    padding-block: calc(var(--spacing) * 19);
   }
 
   .py-20 {
