@@ -13,21 +13,6 @@ const inter = Inter({
   preload: true,
 })
 
-
-const gothic = {
-  subsets: ['latin'],      // 見た目を揃えるために残す（意味はほぼなし）
-  variable: '--font-gothic',
-  display: 'swap',         // FOIT回避
-  preload: true,           // preload は Google Fonts 専用ですが形式を揃えるために残す
-  fonts: [
-    'Hiragino Kaku Gothic ProN',
-    'Hiragino Sans',
-    'Meiryo',
-    'sans-serif',
-  ],
-};
-
-
 const shippori = Shippori_Mincho({
   weight: ['400', '500', '600', '700'],
   subsets: ['latin'],
