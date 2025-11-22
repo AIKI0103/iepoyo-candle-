@@ -2,9 +2,6 @@
 
 import Link from 'next/link'
 import { EXPERIENCE_MENUS, formatPrice } from '@/data/master'
-
-import { Badge } from '@/components/ui/badge'
-import { Card } from '@/components/ui/card'
 import { GradientButton } from '@/components/ui/gradient-button'
 import { CardImage } from '@/components/ui/optimized-image'
 import { SectionHeading } from '@/components/ui/section-heading'
@@ -13,26 +10,22 @@ import GSAPFadeIn from '@/components/GSAPFadeIn' // 追加
 
 const PopularProductsSection = () => {
   const popularMenus = [...EXPERIENCE_MENUS].sort((a, b) => b.popularity - a.popularity)
-  const menu = popularMenus[0]
 
   return (
-<section className="relative py-20 bg-gradient-to-br from-pink-400/60 via-white/60 to-blue-400/60 overflow-hidden">
-  {/* 背景画像用の絶対配置 div */}
-  <div
-    className="absolute inset-0 bg-[url('/bg-star.jpg')] bg-cover bg-center opacity-20 z-0"
-  />
-    <div
-    className="absolute inset-0 bg-[url('/yuruhuwa-bg.jpg')] bg-cover bg-center opacity-70 z-0 my-[3rem] mx-[1rem] md:mx-[5rem] rounded-2xl"
-  />
+    <section className="relative z-30 py-20 bg-gradient-to-br from-pink-400/60 via-white/60 to-blue-400/60">
+      {/* 背景画像用の絶対配置 div */}
+      <div className="absolute inset-0 bg-[url('/bg-star.jpg')] bg-cover bg-center opacity-20 z-0" />
+      <div className="absolute inset-0 bg-[url('/yuruhuwa-bg.jpg')] bg-cover bg-center opacity-70 z-0 my-[3rem] mx-[1rem] md:mx-[5rem] rounded-2xl" />
       <GSAPFadeIn />
 
       <SectionHeading
-          title={
-    <>
-      宮古島の海を感じる<br className="block md:hidden" />
-      キャンドル体験
-    </>
-  }
+        title={
+          <>
+            宮古島の海を感じる
+            <br className="block md:hidden" />
+            キャンドル体験
+          </>
+        }
         subtitle="Candle Making Experience"
         gradient
       />
@@ -88,7 +81,9 @@ const PopularProductsSection = () => {
       {/* 下部CTA */}
       <div className="mask-clip  mt-12 text-center">
         <p className="mb-6 text-gray-600">
-          もちろん、体験でご自身で作ることも、<br className="block md:hidden" />完成品をご購入いただくことも可能です。
+          もちろん、体験でご自身で作ることも、
+          <br className="block md:hidden" />
+          完成品をご購入いただくことも可能です。
         </p>
         <div className="flex-col md:flex justify-center md:gap-4">
           <Link href="/gallery">
@@ -103,34 +98,33 @@ const PopularProductsSection = () => {
           </Link>
         </div>
       </div>
-<div className="relative w-full h-24 overflow-hidden opacity-20">
-  <div
-    className="absolute whitespace-nowrap font-bold text-6xl flex"
-    style={{
-      background: 'linear-gradient(to right, #4FC3E7, #F4C2C1)',
-      WebkitBackgroundClip: 'text',
-      WebkitTextFillColor: 'transparent',
-      backgroundClip: 'text',
-      animation: 'slideText 40s linear infinite',
-    }}
-  >
-    {/* 文字列を2回だけでOK */}
-    <span className="mr-[1rem]">iepoyo&nbsp;candle&nbsp;iepoyo&nbsp;candle</span>
-    <span className="mr-[1rem]">iepoyo&nbsp;candle&nbsp;iepoyo&nbsp;candle</span>
+      <div className="relative w-full h-24 overflow-hidden opacity-20">
+        <div
+          className="absolute whitespace-nowrap font-bold text-6xl flex"
+          style={{
+            background: 'linear-gradient(to right, #4FC3E7, #F4C2C1)',
+            WebkitBackgroundClip: 'text',
+            WebkitTextFillColor: 'transparent',
+            backgroundClip: 'text',
+            animation: 'slideText 40s linear infinite',
+          }}
+        >
+          {/* 文字列を2回だけでOK */}
+          <span className="mr-[1rem]">iepoyo&nbsp;candle&nbsp;iepoyo&nbsp;candle</span>
+          <span className="mr-[1rem]">iepoyo&nbsp;candle&nbsp;iepoyo&nbsp;candle</span>
+        </div>
 
-  </div>
-
-  <style jsx>{`
-    @keyframes slideText {
-      0% {
-        transform: translateX(100%); /* 右からスタート */
-      }
-      100% {
-        transform: translateX(-100%); /* 左に全部流れる */
-      }
-    }
-  `}</style>
-</div>
+        <style jsx>{`
+          @keyframes slideText {
+            0% {
+              transform: translateX(100%); /* 右からスタート */
+            }
+            100% {
+              transform: translateX(-100%); /* 左に全部流れる */
+            }
+          }
+        `}</style>
+      </div>
     </section>
   )
 }

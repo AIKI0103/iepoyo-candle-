@@ -3,22 +3,21 @@
   &::before {
     content: '';
     position: absolute;
-    inset: 0; // top:0; right:0; bottom:0; left:0;
+    inset: 0;
     background-color: rgba(0, 0, 0, 0.3);
     z-index: 10;
   }
 }
 
 .splide {
-
-/* ページネーション共通 */
-.splide__pagination {
-  position: absolute;
-  display: flex;
-  gap: 0.5rem;
-     /* PC の時は右寄せ */
-  z-index: 20;
-    li[role="presentation"] {
+  /* ページネーション共通 */
+  .splide__pagination {
+    position: absolute;
+    display: flex;
+    gap: 0.5rem;
+    /* PC の時は右寄せ */
+    z-index: 10;
+    li[role='presentation'] {
       width: 40px;
       height: 2px;
       border-radius: 1px;
@@ -43,23 +42,23 @@
       }
     }
 
-  /* PC 用 */
-  @media (min-width: 1025px) {
-    left:0;
-    bottom:-2rem;
-  }
+    /* PC 用 */
+    @media (min-width: 1025px) {
+      left: 0;
+      bottom: -2rem;
+    }
 
-  /* タブレット（1024px以下） */
-  @media (max-width: 1024px) {
-    right: 1.5rem;
-    bottom: -2.5rem;
-  }
+    /* タブレット（1024px以下） */
+    @media (max-width: 1024px) {
+      right: 1.5rem;
+      bottom: -2.5rem;
+    }
 
-  /* スマホ（768px以下） */
-  @media (max-width: 768px) {
-    right: 50%;
-    transform: translateX(50%); // 中央寄せ
-    bottom: 1rem;
+    /* スマホ（768px以下） */
+    @media (max-width: 768px) {
+      right: 50%;
+      transform: translateX(50%); // 中央寄せ
+      bottom: 1rem;
+    }
   }
-}
 }

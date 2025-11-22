@@ -1,71 +1,65 @@
 'use client'
 
 import Link from 'next/link'
-
 import { GradientButton } from '@/components/ui/gradient-button'
 
 const CTASection = () => {
   return (
-    <section className="bg-miyako-blue relative overflow-hidden py-20">
-      {/* 背景装飾 */}
-      <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-10 right-10 h-32 w-32 animate-pulse rounded-full bg-white/10 blur-xl" />
-        <div
-          className="absolute bottom-10 left-10 h-24 w-24 animate-pulse rounded-full bg-white/10 blur-xl"
-          style={{ animationDelay: '1s' }}
-        />
+    <section className="relative overflow-hidden py-24 bg-gradient-to-b from-pink-200 via-purple-200 to-blue-200">
+      {/* 背景のふんわり丸 */}
+      <div className="absolute inset-0 -z-10">
+        <div className="absolute top-10 left-1/4 h-72 w-72 rounded-full bg-pink-300 opacity-50 blur-2xl" />
+        <div className="absolute bottom-20 right-1/4 h-64 w-64 rounded-full bg-purple-300 opacity-40 blur-2xl" />
+        <div className="absolute top-1/2 left-1/2 h-96 w-96 -translate-x-1/2 -translate-y-1/2 rounded-full bg-blue-300 opacity-30 blur-3xl" />
+
+        {/* 小さいキラキラ */}
+        {[...Array(8)].map((_, i) => (
+          <div
+            key={i}
+            className="absolute rounded-full bg-white opacity-70 blur-sm"
+            style={{
+              top: `${Math.random() * 100}%`,
+              left: `${Math.random() * 100}%`,
+              width: `${Math.random() * 20 + 10}px`,
+              height: `${Math.random() * 20 + 10}px`,
+            }}
+          />
+        ))}
       </div>
 
-      <div className="relative z-10 container mx-auto px-4 text-center">
-        <div className="animate-in fade-in slide-in-from-bottom-4 mx-auto max-w-4xl duration-800">
-          {/* メインメッセージ */}
-          <h2 className="mb-6 text-3xl font-bold text-white md:text-5xl">
-            さあ、あなただけの特別な
-            <br className="hidden sm:block" />
-            <span className="text-gold-highlight">キャンドル作り体験</span>
-            <br className="hidden sm:block" />
-            をはじめよう
-          </h2>
+      <div className="relative z-10 container mx-auto px-4 text-center py-24">
+        <h2 className="text-2xl md:text-3xl font-extrabold leading-snug drop-shadow-[0_4px_16px_rgba(0,0,0,0.8)] mb-6 text-white">
+          <span className="text-white">宮古島で過ごす</span>
+          <br className="hidden sm:block" />
+          ふんわりキャンドル体験
+        </h2>
 
-          <p className="animate-in fade-in slide-in-from-bottom-4 mb-8 text-lg leading-relaxed text-white/90 delay-200 duration-800 md:text-xl">
-            宮古島の美しい自然に包まれた空間で、
-            <br className="hidden sm:block" />
-            世界にひとつの宝物を作る、心ときめく時間。
-            <br className="hidden sm:block" />
-            最高の思い出作りを、私たちが全力でサポートします！
-          </p>
+        <p
+          className="max-w-2xl mx-auto text-gray-800 text-base md:text-lg leading-relaxed
+              bg-white/70 backdrop-blur-xl rounded-3xl px-8 py-6 shadow-lg border border-white/50 mb-12"
+        >
+          パステルの光に包まれて、世界にひとつだけのキャンドルを作る時間。
+          <br />
+          香りや色を自由に選べて、初めての方も安心です。
+        </p>
 
-          {/* 特典情報 */}
-          <div className="animate-in fade-in zoom-in-95 mx-auto mb-8 max-w-2xl rounded-2xl bg-white/15 p-6 backdrop-blur-sm delay-400 duration-600">
-            <h3 className="mb-4 text-xl font-bold text-white">🎁 ご予約特典</h3>
-            <div className="grid grid-cols-1 gap-4 text-white/90 md:grid-cols-3">
-              <div className="text-center">
-                <div className="mb-2 text-2xl">🎁</div>
-                <div className="text-sm">ギフトラッピング無料</div>
-              </div>
-              <div className="text-center">
-                <div className="mb-2 text-2xl">📸</div>
-                <div className="text-sm">記念フォトサービス</div>
-              </div>
-              <div className="text-center">
-                <div className="mb-2 text-2xl">🌺</div>
-                <div className="text-sm">プチギフトプレゼント</div>
-              </div>
+        <div className="max-w-3xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+          {['ギフトラッピング', '思い出フォト', 'ちょっとしたお土産'].map((item, idx) => (
+            <div
+              key={idx}
+              className="p-6 bg-gradient-to-r from-[#d2f3ff] via-[#cae0e4] to-pink-300 rounded-3xl backdrop-blur-xl shadow-lg hover:scale-105 hover:shadow-2xl transition-transform duration-300 text-white font-semibold"
+            >
+              {item}
             </div>
-          </div>
+          ))}
+        </div>
 
-          {/* CTAボタン */}
-          <div className="animate-in fade-in slide-in-from-bottom-4 flex flex-col items-center justify-center gap-4 delay-600 duration-800 sm:flex-row">
-            <Link href="/reservation">
-              <GradientButton
-                size="md"
-                variant="secondary"
-                className="min-w-64"
-              >
-                🕯️ 今すぐ予約する
-              </GradientButton>
-            </Link>
-          </div>
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
+          <Link href="/reservation">
+            <GradientButton className="min-w-64 px-12 py-5 text-lg font-black rounded-full bg-gradient-to-r from-pink-400 via-purple-400 to-pink-300 hover:scale-105 hover:shadow-2xl transition-transform">
+              体験を予約する
+            </GradientButton>
+          </Link>
         </div>
       </div>
     </section>
