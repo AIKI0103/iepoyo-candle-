@@ -5,7 +5,7 @@ import { GradientButton } from '@/components/ui/gradient-button'
 
 const CTASection = () => {
   return (
-    <section className="relative overflow-hidden py-24 bg-gradient-to-b from-pink-200 via-purple-200 to-blue-200">
+    <section className="relative overflow-hidden py-10 bg-gradient-to-b from-pink-200 via-purple-200 to-blue-200">
       {/* 背景のふんわり丸 */}
       <div className="absolute inset-0 -z-10">
         <div className="absolute top-10 left-1/4 h-72 w-72 rounded-full bg-pink-300 opacity-50 blur-2xl" />

@@ -7,6 +7,26 @@ const TestimonialsSection = () => {
   const [activeTab, setActiveTab] = useState<'hashtags' | 'examples'>('hashtags')
   const canvasRef = useRef<HTMLCanvasElement>(null)
 
+  const images = ['/Anicandle2.png', '/Anicandle3.png', '/Anicandle4.png']
+
+  const [leftIndex, setLeftIndex] = useState(0)
+  const [rightIndex, setRightIndex] = useState(1) // 初期値は左と被らないように1に
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setLeftIndex((prev) => (prev + 1) % images.length)
+
+      // 右側は左側と被らないようにランダムに
+      let nextRight
+      do {
+        nextRight = Math.floor(Math.random() * images.length)
+      } while (nextRight === leftIndex)
+      setRightIndex(nextRight)
+    }, 1000) // 0.5秒ごとに切り替え
+
+    return () => clearInterval(interval)
+  }, [leftIndex])
+
   // --- パーティクル背景 ---
   useEffect(() => {
     const canvas = canvasRef.current
@@ -182,6 +202,13 @@ const TestimonialsSection = () => {
 
   return (
     <section className="py-20 relative mask-clip">
+      <div className="absolute bottom-1 left-0 z-10 w-32 h-32 overflow-hidden">
+        <img src={images[leftIndex]} alt="左の切り替え画像" className="w-full h-full object-cover" />
+      </div>
+
+      <div className="absolute bottom-1 right-0 z-10 w-32 h-32 overflow-hidden">
+        <img src={images[rightIndex]} alt="右の切り替え画像" className="w-full h-full object-cover" />
+      </div>
       <canvas ref={canvasRef} className="absolute inset-0 z-0 pointer-events-none"></canvas>
 
       <div className="container mx-auto px-4 relative z-10">
@@ -261,7 +288,10 @@ const TestimonialsSection = () => {
             ))}
           </div>
 
-          <div className="mx-auto max-w-lg p-10 bg-gradient-to-b from-pink-50 via-pink-100 to-pink-50 text-center shadow-xl min-h-[25rem] relative overflow-hidden">
+          <div
+            className="mx-auto max-w-full p-10 bg-gradient-to-b from-pink-50 via-pink-100 to-pink-50 text-center shadow-xl relative overflow-hidden h-auto md:h-[50rem]
+"
+          >
             <div className="absolute inset-0 bg-[url('/images/watercolor-pink.png')] bg-no-repeat bg-center bg-cover opacity-10 pointer-events-none"></div>
 
             {activeTab === 'hashtags' && (
@@ -308,7 +338,7 @@ const TestimonialsSection = () => {
                         alt={`${t.name}の作品`}
                         className="w-full h-36 object-cover transition-transform duration-300 group-hover:scale-105"
                       />
-                      <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/40 via-black/20 to-transparent text-white text-xs py-1 text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                      <div className="absolute bottom-0 left-0 w-full from-black/40 via-black/20 to-transparent text-white text-xs py-1 text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         {t.name} さんの作品
                       </div>
                     </div>

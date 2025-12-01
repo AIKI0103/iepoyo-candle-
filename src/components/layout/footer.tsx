@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import { FaInstagram, FaLine } from 'react-icons/fa'
 
 const Footer = () => {
   const currentYear = new Date().getFullYear()
@@ -26,99 +27,44 @@ const Footer = () => {
     {
       title: 'SNS',
       links: [
-        {
-          href: 'https://www.instagram.com/iepoyo.miyako/',
-          label: 'Instagram',
-        },
-        { href: 'https://lin.ee/PhCo4lv', label: 'LINE' },
+        { href: 'https://www.instagram.com/iepoyo.miyako/', label: 'Instagram', icon: <FaInstagram /> },
+        { href: 'https://lin.ee/PhCo4lv', label: 'LINE', icon: <FaLine /> },
       ],
     },
   ]
 
   return (
-    <footer
-      style={{
-        background: 'linear-gradient(to right, #D9D9FF, #FCE6F6)',
-        color: '#1F2937',
-        marginTop: 'auto',
-      }}
-    >
-      <div
-        style={{
-          maxWidth: '1280px',
-          margin: '0 auto',
-          padding: '3rem 1rem',
-        }}
-      >
-        <div
-          style={{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', // iPhoneX対応
-            gap: '2rem',
-          }}
-        >
-          {/* ロゴとブランド情報 */}
-          <div>
-            <div
-              style={{
-                background: 'linear-gradient(to right, #4FC3E7, #F4C2C1)',
-                WebkitBackgroundClip: 'text',
-                WebkitTextFillColor: 'transparent',
-                backgroundClip: 'text',
-                fontSize: '1.5rem',
-                fontWeight: 'bold',
-                marginBottom: '1rem',
-              }}
-            >
-              iepoyo candle
-            </div>
-            <p
-              style={{
-                fontSize: '0.875rem',
-                lineHeight: '1.6',
-                color: '#6B7280',
-                marginBottom: '1rem',
-              }}
-            >
-              宮古島の美しい海をイメージしたゆめかわいキャンドル作り体験で、
-              特別な思い出を作りませんか。
+    <footer className="relative overflow-hidden bg-gradient-to-b from-pink-50 via-purple-50 to-cyan-50 text-gray-800 mt-auto shadow-inner">
+      {/* 可愛い雲やキラキラ背景 */}
+      <div className="absolute inset-0 pointer-events-none">
+        <div className="absolute top-10 left-20 w-24 h-12 bg-pink-200 rounded-full opacity-40 blur-3xl animate-float-slow"></div>
+        <div className="absolute top-32 left-60 w-32 h-16 bg-purple-200 rounded-full opacity-30 blur-3xl animate-float-slower"></div>
+        <div className="absolute top-48 left-10 w-16 h-8 bg-cyan-200 rounded-full opacity-30 blur-2xl animate-float"></div>
+        <div className="absolute top-64 left-80 w-24 h-12 bg-pink-300 rounded-full opacity-25 blur-3xl animate-float-slow"></div>
+      </div>
+
+      <div className="relative max-w-[1280px] mx-auto px-6 py-12">
+        <div className="grid md:grid-cols-4 gap-8">
+          {/* ロゴ＆ブランド紹介 */}
+          <div className="space-y-4">
+            <h2 className="text-3xl font-bold bg-gradient-to-r from-pink-400 via-purple-400 to-cyan-400 bg-clip-text text-transparent mb-2 flex items-center gap-2">
+              iepoyo candle ✨<span className="animate-ping inline-block w-2 h-2 bg-yellow-300 rounded-full"></span>
+            </h2>
+            <p className="text-sm text-gray-600 leading-relaxed">
+              宮古島の美しい海をイメージしたゆめかわキャンドル作り体験で、特別な思い出を作りませんか。
             </p>
-            <div
-              style={{
-                fontSize: '0.875rem',
-                color: '#6B7280',
-              }}
-            >
-              <p>
-                📍 〒906-0008
-                <br />
-                沖縄県宮古島市平良荷川取206-3
-              </p>
-            </div>
+            <address className="not-italic text-gray-500 text-sm">
+              📍 〒906-0008
+              <br />
+              沖縄県宮古島市平良荷川取206-3
+            </address>
           </div>
 
           {/* フッターリンク */}
           {footerSections.map((section) => (
             <div key={section.title}>
-              <h3
-                style={{
-                  fontWeight: '600',
-                  color: '#1F2937',
-                  marginBottom: '1rem',
-                }}
-              >
-                {section.title}
-              </h3>
-              <ul
-                style={{
-                  listStyle: 'none',
-                  padding: 0,
-                  margin: 0,
-                  display: 'flex',
-                  flexDirection: 'column',
-                  gap: '0.5rem',
-                }}
-              >
+              <h3 className="font-semibold text-gray-800 mb-4">{section.title}</h3>
+              <ul className="flex flex-col gap-2">
                 {section.links.map((link) => (
                   <li key={link.href}>
                     {link.href.startsWith('http') ? (
@@ -126,37 +72,17 @@ const Footer = () => {
                         href={link.href}
                         target="_blank"
                         rel="noopener noreferrer"
-                        style={{
-                          fontSize: '0.875rem',
-                          color: '#6B7280',
-                          textDecoration: 'none',
-                          transition: 'color 0.2s',
-                        }}
-                        onMouseOver={(e) => {
-                          e.currentTarget.style.color = '#4FC3E7'
-                        }}
-                        onMouseOut={(e) => {
-                          e.currentTarget.style.color = '#6B7280'
-                        }}
+                        className="flex items-center gap-2 text-gray-500 text-sm hover:text-pink-500 transition-all hover:scale-110"
                       >
+                        {link.icon && <span className="text-lg">{link.icon}</span>}
                         {link.label}
                       </a>
                     ) : (
                       <Link
                         href={link.href}
-                        style={{
-                          fontSize: '0.875rem',
-                          color: '#6B7280',
-                          textDecoration: 'none',
-                          transition: 'color 0.2s',
-                        }}
-                        onMouseOver={(e) => {
-                          e.currentTarget.style.color = '#4FC3E7'
-                        }}
-                        onMouseOut={(e) => {
-                          e.currentTarget.style.color = '#6B7280'
-                        }}
+                        className="flex items-center gap-2 text-gray-500 text-sm hover:text-pink-500 transition-all hover:scale-110"
                       >
+                        {link.icon && <span className="text-lg">{link.icon}</span>}
                         {link.label}
                       </Link>
                     )}
@@ -168,64 +94,39 @@ const Footer = () => {
         </div>
 
         {/* 区切り線 */}
-        <div
-          style={{
-            marginTop: '2rem',
-            borderTop: '1px solid rgba(156, 163, 175, 0.3)',
-            paddingTop: '2rem',
-          }}
-        >
-          <div
-            style={{
-              display: 'flex',
-              flexDirection: 'column',
-              alignItems: 'center',
-              justifyContent: 'space-between',
-              gap: '1rem',
-            }}
-            className="footer-bottom"
-          >
-            <p
-              style={{
-                fontSize: '0.875rem',
-                color: '#6B7280',
-                margin: 0,
-              }}
-            >
-              © {currentYear} iepoyo candle. All rights reserved.
-            </p>
-            <div
-              style={{
-                display: 'flex',
-                alignItems: 'center',
-                gap: '1.5rem',
-              }}
-            >
-              <span
-                style={{
-                  fontSize: '0.875rem',
-                  color: '#9CA3AF',
-                }}
-              >
-                #宮古島キャンドル #miyakocandle
-              </span>
+        <div className="border-t border-pink-200 mt-10 pt-6">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+            <p className="text-gray-500 text-sm">© {currentYear} iepoyo candle. All rights reserved.</p>
+            <div className="flex flex-wrap gap-4 text-pink-300 text-sm font-medium">
+              <span className="hover:text-pink-500 transition-colors cursor-pointer">#宮古島キャンドル</span>
+              <span className="hover:text-pink-500 transition-colors cursor-pointer">#miyakocandle</span>
             </div>
           </div>
         </div>
       </div>
 
-      {/* レスポンシブ用CSS */}
-      <style
-        dangerouslySetInnerHTML={{
-          __html: `
-          @media (min-width: 768px) {
-            .footer-bottom {
-              flex-direction: row !important;
-            }
+      <style jsx>{`
+        @keyframes float {
+          0% {
+            transform: translateY(0px);
           }
-        `,
-        }}
-      />
+          50% {
+            transform: translateY(-15px);
+          }
+          100% {
+            transform: translateY(0px);
+          }
+        }
+        .animate-float {
+          animation: float 6s ease-in-out infinite;
+        }
+        .animate-float-slow {
+          animation: float 10s ease-in-out infinite;
+        }
+        .animate-float-slower {
+          animation: float 14s ease-in-out infinite;
+        }
+      `}</style>
     </footer>
   )
 }
