@@ -32,7 +32,7 @@ const PopularProductsSection = () => {
 
       <div className="max-w-6xl mx-auto mt-12 flex flex-col lg:flex-row gap-8 justify-center items-center lg:items-start relative">
         {/* 左: 大きな画像と下に文章 */}
-        <div className="flex flex-col  md:items-start w-[327.67px] mask-clip ">
+        <div className="flex flex-col  md:items-start w-[200px] md:w-[327.67px] mask-clip ">
           <CardImage
             src={popularMenus[0].image}
             alt={`${popularMenus[0].name} - 宮古島で人気のキャンドル体験`}

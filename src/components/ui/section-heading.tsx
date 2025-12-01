@@ -33,7 +33,7 @@ const SectionHeading = forwardRef<HTMLDivElement, SectionHeadingProps>(
       titleClassName,
       subtitleClassName,
     },
-    ref
+    ref,
   ) => {
     const alignClasses = {
       left: 'text-left items-start',
@@ -58,18 +58,7 @@ const SectionHeading = forwardRef<HTMLDivElement, SectionHeadingProps>(
     }
 
     const renderTitleWithIcon = () => {
-      const titleElement = (
-        <h2
-          className={cn(
-            'font-bold',
-            sizeClasses[size],
-            titleClasses,
-            titleClassName
-          )}
-        >
-          {title}
-        </h2>
-      )
+      const titleElement = <h2 className={cn('font-bold', sizeClasses[size], titleClasses, titleClassName)}>{title}</h2>
 
       if (!icon) return titleElement
 
@@ -97,21 +86,17 @@ const SectionHeading = forwardRef<HTMLDivElement, SectionHeadingProps>(
       <div
         ref={ref}
         className={cn(
-          'animate-in fade-in slide-in-from-bottom-4 mb-8 flex flex-col gap-4 duration-600',
+          'animate-in fade-in slide-in-from-bottom-4 mb-4 flex flex-col gap-4 duration-600',
           alignClasses[align],
-          className
+          className,
         )}
       >
         <div className="flex flex-col gap-2">
           {/* バッジ */}
-          {badge && (
-            <div className="animate-in fade-in duration-600">{badge}</div>
-          )}
+          {badge && <div className="animate-in fade-in duration-600">{badge}</div>}
 
           {/* タイトル */}
-          <div className="animate-in fade-in duration-600">
-            {renderTitleWithIcon()}
-          </div>
+          <div className="animate-in fade-in duration-600">{renderTitleWithIcon()}</div>
         </div>
 
         {/* サブタイトル */}
@@ -120,7 +105,7 @@ const SectionHeading = forwardRef<HTMLDivElement, SectionHeadingProps>(
             className={cn(
               'animate-in fade-in text-gray-600 duration-600',
               subtitleSizeClasses[size],
-              subtitleClassName
+              subtitleClassName,
             )}
             style={{ animationDelay: '200ms' }}
           >
@@ -129,7 +114,7 @@ const SectionHeading = forwardRef<HTMLDivElement, SectionHeadingProps>(
         )}
       </div>
     )
-  }
+  },
 )
 
 SectionHeading.displayName = 'SectionHeading'

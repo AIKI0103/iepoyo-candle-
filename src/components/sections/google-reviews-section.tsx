@@ -203,16 +203,16 @@ const GoogleReviewsSection = () => {
           gradient
         />
 
-        <div className="relative mx-auto max-w-2xl mt-10">
+        <div className="relative mx-auto max-w-2xl mt-10 h-[400px] md:h-[300px]">
           {/* レビューカード */}
-          <div className="overflow-hidden">
+          <div className="overflow-hidden h-full">
             <div
-              className="flex transition-transform duration-500 ease-in-out"
+              className="flex h-full transition-transform duration-500 ease-in-out"
               style={{ transform: `translateX(-${currentIndex * 100}%)` }}
             >
               {reviews.map((review) => (
-                <div key={review.id} className="w-full flex-shrink-0 px-2">
-                  <Card className="relative overflow-hidden bg-white/80 backdrop-blur-sm p-6 shadow-xl border border-white/20">
+                <div key={review.id} className="w-full flex-shrink-0 px-2 h-full">
+                  <Card className="relative h-full overflow-hidden bg-white/80 backdrop-blur-sm p-6 shadow-xl border border-white/20">
                     {/* 評価 */}
                     <div className="mb-3 flex items-center gap-2">
                       <div className="flex text-base text-yellow-400">
@@ -225,10 +225,10 @@ const GoogleReviewsSection = () => {
                     </div>
 
                     {/* コメント */}
-                    <p className="mb-4 text-sm text-gray-700 italic leading-snug">&ldquo;{review.comment}&rdquo;</p>
+                    <p className="mb-4 text-md text-gray-700 italic leading-snug">&ldquo;{review.comment}&rdquo;</p>
 
                     {/* ユーザー情報 */}
-                    <div className="flex items-center gap-3">
+                    <div className="flex items-end gap-3 mr-auto ml-auto">
                       <Avatar className="size-10">
                         <AvatarFallback className="text-xl">{review.avatar}</AvatarFallback>
                       </Avatar>
